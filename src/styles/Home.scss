@@ -1,0 +1,29 @@
+.home {
+	flex: $right-side-width;
+	background-color: rgb(238, 117, 238);
+	position: relative;
+}
+.fade-enter {
+	opacity: 0;
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+		both;
+}
+
+.fade-enter-active {
+	opacity: 0.5;
+	transition: opacity 1s;
+}
+
+.fade-exit {
+	opacity: 1;
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	position: absolute;
+	height: 100%;
+	left: 15%;
+	right: 0;
+}
+
+.fade-exit-active {
+	opacity: 0;
+	transition: opacity 500ms;
+}

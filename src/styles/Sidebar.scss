@@ -1,0 +1,7 @@
+.sidebar {
+	flex: $left-side-width;
+	.sidebar__links {
+		display: flex;
+		flex-direction: column;
+	}
+}
