@@ -14,19 +14,15 @@ $left-side-width: 0.15;
 	width: 100vw;
 	box-sizing: border-box;
 	background-color: rgb(2, 17, 58);
+	padding: 20px;
 }
 .app::-webkit-scrollbar {
 	display: none;
 }
 .app__rightSide {
 	flex: $right-side-width;
-	padding: 20px;
-	.app__rightContainer {
-		height: 100%;
-		width: 100%;
-		border: 2px solid green;
-		position: relative;
-	}
+	position: relative;
+	height: 100%;
 }
 
 @import './KeyFrames.scss';

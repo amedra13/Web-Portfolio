@@ -1,7 +1,31 @@
 .sidebar {
 	flex: $left-side-width;
+	margin-right: 20px;
+}
+.sidebar__container {
+	height: 100%;
+	background: rgba(232, 160, 233, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	img {
+		width: 125px;
+		height: 125px;
+		margin: 0 auto;
+		border: 1px solid orange;
+	}
 	.sidebar__links {
 		display: flex;
 		flex-direction: column;
+		border: 1px solid red;
+	}
+	.sidebar__iconLinks {
+		border: 1px solid green;
 	}
 }
