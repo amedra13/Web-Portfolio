@@ -1,9 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
 		<div className="home">
-			<h1>Home Component</h1>
+			<div className="home__header">
+				<h1>Welcome to my portfolio!</h1>
+				<h1>
+					My name is <span>Andres</span>
+				</h1>
+				<p>Front End Developer</p>
+			</div>
+			<div className="home__contact">
+				<Link to="contact">Reach out to me!</Link>
+			</div>
 		</div>
 	);
 };

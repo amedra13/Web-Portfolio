@@ -11,16 +11,21 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 function App() {
 	let location = useLocation();
+	const print = (location) => {
+		console.log(location);
+		return location.key;
+	};
+
 	return (
 		<div className="app">
 			<Sidebar />
 			<div className="app__rightSide">
 				<TransitionGroup component={null}>
 					<CSSTransition
-						key={location.key}
+						key={print(location)}
 						unmountOnExit
 						classNames="fade"
-						timeout={2000}
+						timeout={1500}
 					>
 						<Switch location={location}>
 							<Route exact path="/" component={Home} />

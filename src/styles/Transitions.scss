@@ -1,11 +1,12 @@
 .fade-enter {
 	opacity: 0;
-	animation: flip-in-hor-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+	animation: flip-in-hor-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+		both;
 }
 
 .fade-enter-active {
 	opacity: 1;
-	transition: opacity 1s 1s;
+	transition: opacity 0.5s 0.5s;
 }
 
 .fade-exit {
@@ -20,5 +21,5 @@
 
 .fade-exit-active {
 	opacity: 0;
-	transition: opacity 1s;
+	transition: opacity 0.5s;
 }
