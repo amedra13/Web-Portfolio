@@ -1,4 +1,4 @@
 .skills {
-	flex: $right-side-width;
+	@include content-styling;
 	background-color: rgb(101, 135, 230);
 }

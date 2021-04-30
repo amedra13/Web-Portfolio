@@ -1,4 +1,4 @@
 .work {
-	flex: $right-side-width;
+	@include content-styling;
 	background-color: rgb(238, 188, 95);
 }

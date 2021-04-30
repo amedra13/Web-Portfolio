@@ -14,23 +14,27 @@ function App() {
 	return (
 		<div className="app">
 			<Sidebar />
-			<TransitionGroup component={null}>
-				<CSSTransition
-					key={location.key}
-					unmountOnExit
-					classNames="fade"
-					timeout={1000}
-				>
-					<Switch location={location}>
-						<Route exact path="/" component={Home} />
-						<Route exact path="/about" component={About} />
-						<Route exact path="/contact" component={Contact} />
-						<Route exact path="/skills" component={Skills} />
-						<Route exact path="/work" component={Work} />
-						<Redirect to="/" />
-					</Switch>
-				</CSSTransition>
-			</TransitionGroup>
+			<div className="app__rightSide">
+				<div className="app__rightContainer">
+					<TransitionGroup component={null}>
+						<CSSTransition
+							key={location.key}
+							unmountOnExit
+							classNames="fade"
+							timeout={2000}
+						>
+							<Switch location={location}>
+								<Route exact path="/" component={Home} />
+								<Route exact path="/about" component={About} />
+								<Route exact path="/contact" component={Contact} />
+								<Route exact path="/skills" component={Skills} />
+								<Route exact path="/work" component={Work} />
+								<Redirect to="/" />
+							</Switch>
+						</CSSTransition>
+					</TransitionGroup>
+				</div>
+			</div>
 		</div>
 	);
 }
