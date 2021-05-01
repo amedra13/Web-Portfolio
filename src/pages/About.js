@@ -1,4 +1,9 @@
 import React from 'react';
+import ProfilePhoto from '../images/personIcon.jpg';
+import Basketball from '../images/recBasketballIcon.png';
+import SportsCards from '../images/sportscardsIcon.png';
+import Videogames from '../images/videogameIcon.png';
+import VirtualReality from '../images/vrIcon.png';
 
 const About = () => {
 	return (
@@ -19,6 +24,22 @@ const About = () => {
 					since, and I hope to find the opportunity to grow and learn more as a
 					developer.
 				</p>
+			</div>
+			<div className="about__me">
+				<img src={ProfilePhoto} alt="andres medrano" />
+				<div className="about__interests">
+					<p>
+						In my free time, I like to venture out into various hobbies that
+						help me pass the time. Anything from sports cards collecting and
+						video games, to seeking new hikings paths to try with the partner{' '}
+					</p>
+					<div className="interests">
+						<img className="icon" src={Basketball} alt="" />
+						<img className="icon" src={SportsCards} alt="" />
+						<img className="icon" src={Videogames} alt="" />
+						<img className="icon" src={VirtualReality} alt="" />
+					</div>
+				</div>
 			</div>
 		</div>
 	);
