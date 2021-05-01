@@ -17,6 +17,9 @@ $main-highlightBlue: rgb(0, 238, 255);
 	backdrop-filter: blur(15px);
 	color: white;
 }
+* {
+	box-sizing: border-box;
+}
 
 .app {
 	display: flex;

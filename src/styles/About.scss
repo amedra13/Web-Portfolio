@@ -4,16 +4,30 @@
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
 	font-family: $main-font;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 10% 90%;
+	grid-gap: 0 15px;
+	padding: 15px;
+}
+
+.about__title {
+	grid-column: 1 / 3;
+	margin-bottom: 15px;
+	background: $main-blurColor;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 10px;
+	padding-left: 3%;
+	text-transform: capitalize;
 }
 .about__container {
+	// margin: 10px;
 	background: $main-blurColor;
 	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
-	width: 400px;
-	height: 500px;
+	// width: 400px;
+	// height: 500px;
 	padding: 40px;
 	border-radius: 10px;
 	h1 {
@@ -29,10 +43,11 @@
 }
 
 .about__me {
+	// margin: 10px;
 	background: $main-blurColor;
 	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
-	width: 400px;
-	height: 500px;
+	// width: 400px;
+	// height: 500px;
 	padding: 40px;
 	border-radius: 10px;
 	display: flex;
