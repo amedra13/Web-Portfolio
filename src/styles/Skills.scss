@@ -1,7 +1,36 @@
 .skills {
 	@include content-styling;
+	@include content-grid-stepup;
 	background-color: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	border-radius: 10px;
+	font-family: $main-font;
+}
+.skills__header{
+	@include content-glass-style;
+	@include header-container;
+}
+.skills__description{
+	@include content-glass-style;
+	padding: 40px;
+	display:flex;
+	flex-direction:column;
+	h1 {
+		@include title-h1-style;
+	}
+	p {
+		@include body-p-style;
+	}
+	.description__body{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex: 1;
+	}
+
+}
+.skills__icons{
+	@include content-glass-style;
+	padding: 40px;
 }

@@ -8,7 +8,7 @@ import VirtualReality from '../images/vrIcon.png';
 const About = () => {
 	return (
 		<div className="about">
-			<div className="about__title">
+			<div className="about__header">
 				<h1>A little bit about Myself</h1>
 			</div>
 			<div className="about__container">

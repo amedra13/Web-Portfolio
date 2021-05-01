@@ -1,55 +1,33 @@
 .about {
 	@include content-styling;
+	@include content-grid-stepup;
 	background: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	border-radius: 10px;
 	font-family: $main-font;
 	height: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 10% 90%;
-	grid-gap: 0 15px;
-	padding: 15px;
 }
 
-.about__title {
-	grid-column: 1 / 3;
-	margin-bottom: 15px;
-	background: $main-blurColor;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	border-radius: 10px;
-	padding-left: 3%;
-	text-transform: capitalize;
+.about__header {
+	@include content-glass-style;
+	@include header-container;
+
 }
 .about__container {
-	// margin: 10px;
-	background: $main-blurColor;
-	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
-	// width: 400px;
-	// height: 500px;
+	@include content-glass-style;
 	padding: 40px;
-	border-radius: 10px;
 	h1 {
-		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-		font-size: 70px;
-		margin: 0;
-		color: rgb(199, 209, 255);
+		@include title-h1-style;
 	}
 	p {
-		font-size: 20px;
-		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
+		@include body-p-style;
 	}
 }
 
 .about__me {
-	// margin: 10px;
-	background: $main-blurColor;
-	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
-	// width: 400px;
-	// height: 500px;
+	@include content-glass-style;
 	padding: 40px;
-	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
