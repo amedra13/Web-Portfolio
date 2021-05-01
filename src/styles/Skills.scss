@@ -1,6 +1,6 @@
 .skills {
 	@include content-styling;
-	background-color: rgba(115, 140, 207, 0.267);
+	background-color: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	// backdrop-filter: blur(6px);
 	// -webkit-backdrop-filter: blur(6px);
