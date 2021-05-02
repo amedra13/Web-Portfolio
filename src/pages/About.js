@@ -37,10 +37,18 @@ const About = () => {
 						video games, to seeking new hikings paths to try with the partner{' '}
 					</p>
 					<div className="interests">
-						<img className="icon" src={Basketball} alt="" />
-						<img className="icon" src={SportsCards} alt="" />
-						<img className="icon" src={Videogames} alt="" />
-						<img className="icon" src={VirtualReality} alt="" />
+						<div className="icon__container">
+							<img className="icon" src={Basketball} alt="" />
+						</div>
+						<div className="icon__container">
+							<img className="icon" src={SportsCards} alt="" />
+						</div>
+						<div className="icon__container">
+							<img className="icon" src={Videogames} alt="" />
+						</div>
+						<div className="icon__container">
+							<img className="icon" src={VirtualReality} alt="" />
+						</div>
 					</div>
 				</div>
 			</div>

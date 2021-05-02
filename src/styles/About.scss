@@ -12,7 +12,6 @@
 .about__header {
 	@include content-glass-style;
 	@include header-container;
-
 }
 .about__container {
 	@include content-glass-style;
@@ -40,9 +39,8 @@
 	}
 	.about__interests {
 		border-radius: 10px;
-		padding: 10px;
-		background-color: rgba(5, 2, 2, 0.432);
-		width: 100%;
+		padding: 10px 30px;
+		flex: 1;
 		.icon {
 			width: 100px;
 			height: 100px;
@@ -52,8 +50,24 @@
 		}
 		.interests {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-evenly;
 			align-items: center;
+			.icon__container {
+				@include content-glass-style;
+				background: rgba(0, 0, 0, 0.363);
+				width: 140px;
+				height: 140px;
+				margin: 10px;
+				padding: 10px;
+				// animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s
+				// both;
+				img {
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
 }

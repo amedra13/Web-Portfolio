@@ -22,7 +22,7 @@
 		font-size: 25px;
 		font-style: italic;
 		text-decoration: underline;
-		color: rgb(199, 209, 255);
+		color: $main-titleColor;
 		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 	}
 	span {
