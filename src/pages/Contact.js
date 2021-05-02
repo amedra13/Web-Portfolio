@@ -8,6 +8,13 @@ const Contact = () => {
 	const [message, setMessage] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
 
+	const sendMessage = () => {
+		setIsLoading(true);
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 3000);
+	};
+
 	let formContent = (
 		<form className="contact__form">
 			<input
@@ -38,7 +45,7 @@ const Contact = () => {
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}
 			/>
-			<button onClick={() => setIsLoading(true)}>Send Message</button>
+			<button onClick={() => sendMessage()}>Send Message</button>
 		</form>
 	);
 
