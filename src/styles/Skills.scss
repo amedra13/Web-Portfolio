@@ -7,30 +7,36 @@
 	border-radius: 10px;
 	font-family: $main-font;
 }
-.skills__header{
+.skills__header {
 	@include content-glass-style;
 	@include header-container;
 }
-.skills__description{
+.skills__description {
 	@include content-glass-style;
 	padding: 40px;
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 	h1 {
 		@include title-h1-style;
 	}
 	p {
 		@include body-p-style;
 	}
-	.description__body{
-		display:flex;
+	.description__body {
+		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		flex: 1;
 	}
-
 }
-.skills__icons{
+.skills__icons {
 	@include content-glass-style;
 	padding: 40px;
+	img {
+		object-fit: cover;
+		background-color: $main-blurColor;
+		width: 150px;
+		height: 150px;
+		margin: 10px;
+	}
 }
