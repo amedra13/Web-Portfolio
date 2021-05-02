@@ -30,6 +30,7 @@ const About = () => {
 			</div>
 			<div className="about__me">
 				<img src={ProfilePhoto} alt="andres medrano" />
+				<p>Redwood City, CA</p>
 				<div className="about__interests">
 					<p>
 						In my free time, I like to venture out into various hobbies that
