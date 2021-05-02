@@ -21,23 +21,26 @@ const Skills = () => {
 				<h1>Start of Coding Journey</h1>
 				<div className="description__body">
 					<p>
-						Since beginning my journey as a freelance developer nearly 10 years
-						ago, I’ve done remote work for agencies, consulted for startups, and
-						collaborated with talented people to create web products for both
-						business and consumer use.
+						Since beginning my journey learing to code nearly 3 years ago, I’ve
+						taken traditional classes, online tutorials, and multiple Udemy
+						courses, to teach myself how to code and create great looking
+						applications
 					</p>
 					<p>
-						I create successful responsive websites that are fast, easy to use,
-						and built with best practices. The main area of my expertise is
-						front-end development, HTML, CSS, JS, building small and medium web
-						apps, custom plugins, features, animations, and coding interactive
-						layouts.
+						I love to learn new technologies and apply them to new projects and
+						see it all come together to fruition. One of the greatest
+						satisfations is the moment a new websites and applications that are
+						fast and easy to use, go live. The main area of my expertise is
+						front-end development, HTML, CSS, JS, React, and building new
+						features and animations
 					</p>
+
 					<p>
-						I also have full-stack developer experience with popular open-source
-						CMS like (WordPress, Drupal, Magento, Keystone.js and others) .
+						I also have experience working with the backend such as Node and
+						Express, and connecting my applications to a database such as
+						MongoDB and Firebase.
 					</p>
-					<p>Visit my LinkedIn profile for more details or just contact me.</p>
+					<p>Feel free to contact me, if you would like to know more.</p>
 				</div>
 			</div>
 			<div className="skills__icons">
