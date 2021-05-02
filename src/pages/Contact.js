@@ -27,9 +27,10 @@ const Contact = () => {
 				<div className="formHeader">
 					<h1>Feel free to say "hi"</h1>
 					<p>
-						I’m interested in freelance opportunities – especially ambitious or
-						large projects. However, if you have other request or question,
-						don’t hesitate to use the form.
+						I’m interested in opportunities in which I can learn, grow, and
+						sharpen skills as a Web Developer. If you would like to get in touch
+						and see if we can work on something great together or if you have
+						other request or question, don’t hesitate to use the form.
 					</p>
 				</div>
 				<CSSTransition

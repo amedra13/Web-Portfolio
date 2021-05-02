@@ -3,6 +3,12 @@ import ProjectCard from '../components/ProjectCard';
 import TwitterAccount from '../images/twitterAccount.jpg';
 import SpotifyAccount from '../images/spotifyAccount.png';
 import Nobu from '../images/nobuFood.jpg';
+import ReactLogo from '../images/reactLogo.png';
+import NodeLogo from '../images/nodeLogo.png';
+import MongoDBLogo from '../images/mongoDBLogo.png';
+import ReduxLogo from '../images/reduxLogo.png';
+import SpotifyLogo from '../images/spotifyLogo.png';
+import MaterialUILogo from '../images/materialuiLogo.png';
 
 const Work = () => {
 	return (
@@ -14,21 +20,24 @@ const Work = () => {
 				image={TwitterAccount}
 				title="Twitter Clone"
 				delay="1.5s"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+				description="This a social media web applcation that can function similar to the original inspiration. With this Full-Stack applicaiton, a user is able to create an account in which they are able to interact with other uses through messages, comments, posts"
+				tools={[ReactLogo, NodeLogo, MongoDBLogo]}
 			/>
 			<ProjectCard
 				image={SpotifyAccount}
 				title="Spotify Clone"
 				delay="1.7s"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+				description="With the use of the offical Spotify Api, a user is able to import the playlists from their original Spotfy account and play all their favorite songs. All users are able to search, play,favorite songs based on artists name, genre, or playlist "
 				websiteLink="https://spotify-clone-1867c.web.app/"
+				tools={[ReactLogo, ReduxLogo, SpotifyLogo]}
 			/>
 			<ProjectCard
 				image={Nobu}
 				title="Nobu Website"
 				delay="1.9s"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 				websiteLink="https://nobu-clone.web.app/"
+				description="One of the projects I first created. With my previous place of employment as inspiration for this project, I designed it as close as possible to the original compnay site. Users are able to browse the services the company offers and make a mock reservation."
+				tools={[ReactLogo, ReduxLogo, MaterialUILogo]}
 			/>
 		</div>
 	);
