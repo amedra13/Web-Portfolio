@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LoadingSpinner from '../components/LoadingSpinner';
+import { CSSTransition } from 'react-transition-group';
 
 const Contact = () => {
 	const [name, setName] = useState('');
@@ -7,51 +8,16 @@ const Contact = () => {
 	const [subject, setSubject] = useState('');
 	const [message, setMessage] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
+	const [showForm, setShowForm] = useState(true);
 
 	const sendMessage = () => {
+		setShowForm(false);
 		setIsLoading(true);
 		setTimeout(() => {
 			setIsLoading(false);
 		}, 3000);
 	};
 
-	let formContent = (
-		<form className="contact__form">
-			<input
-				id="name"
-				type="text"
-				placeholder="Name"
-				value={name}
-				onChange={(e) => setName(e.target.value)}
-			/>
-			<input
-				id="email"
-				type="text"
-				placeholder="Email"
-				value={email}
-				onChange={(e) => setEmail(e.target.value)}
-			/>
-			<input
-				id="subject"
-				type="text"
-				placeholder="Subject"
-				value={subject}
-				onChange={(e) => setSubject(e.target.value)}
-			/>
-			<textarea
-				id="message"
-				type="text"
-				placeholder="I would love to hear form you!"
-				value={message}
-				onChange={(e) => setMessage(e.target.value)}
-			/>
-			<button onClick={() => sendMessage()}>Send Message</button>
-		</form>
-	);
-
-	if (isLoading) {
-		formContent = <LoadingSpinner />;
-	}
 	return (
 		<div className="contact">
 			<div className="contact__header">
@@ -66,7 +32,48 @@ const Contact = () => {
 						don’t hesitate to use the form.
 					</p>
 				</div>
-				{formContent}
+				<CSSTransition
+					in={isLoading}
+					timeout={300}
+					classNames="loading"
+					unmountOnExit
+					onExited={() => setShowForm(true)}
+				>
+					<LoadingSpinner />
+				</CSSTransition>
+				{showForm && (
+					<form className="contact__form">
+						<input
+							id="name"
+							type="text"
+							placeholder="Name"
+							value={name}
+							onChange={(e) => setName(e.target.value)}
+						/>
+						<input
+							id="email"
+							type="text"
+							placeholder="Email"
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
+						/>
+						<input
+							id="subject"
+							type="text"
+							placeholder="Subject"
+							value={subject}
+							onChange={(e) => setSubject(e.target.value)}
+						/>
+						<textarea
+							id="message"
+							type="text"
+							placeholder="I would love to hear form you!"
+							value={message}
+							onChange={(e) => setMessage(e.target.value)}
+						/>
+						<button onClick={() => sendMessage()}>Send Message</button>
+					</form>
+				)}
 			</div>
 		</div>
 	);
