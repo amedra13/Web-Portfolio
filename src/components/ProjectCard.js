@@ -7,6 +7,7 @@ const ProjectCard = ({
 	delay,
 	description,
 	websiteLink,
+	projectLink,
 	tools,
 }) => {
 	useEffect(() => {
@@ -30,10 +31,10 @@ const ProjectCard = ({
 				</div>
 
 				<div className="buttons">
-					<a href={websiteLink} target="_blank" rel="noreferrer">
+					{/* <a href={websiteLink} target="_blank" rel="noreferrer">
 						Site
-					</a>
-					<Link to="/work">Description</Link>
+					</a> */}
+					<Link to={projectLink}>Description</Link>
 				</div>
 			</div>
 		</div>

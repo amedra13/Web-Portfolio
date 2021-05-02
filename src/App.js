@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Work from './pages/Work';
 import BgAnimation from './components/BgAnimation';
+import Project from './pages/Project';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
@@ -31,6 +32,7 @@ function App() {
 							<Route exact path="/contact" component={Contact} />
 							<Route exact path="/skills" component={Skills} />
 							<Route exact path="/work" component={Work} />
+							<Route exact path="/work/:project" component={Project} />
 							<Redirect to="/" />
 						</Switch>
 					</CSSTransition>
