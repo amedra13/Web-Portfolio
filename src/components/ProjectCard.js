@@ -17,10 +17,10 @@ const ProjectCard = ({
 			<h1>{title}</h1>
 			<div className="projectCard__description">
 				<p>{description}</p>
-			</div>
-			<div className="projectCard__buttons">
-				<Link to="/">Site</Link>
-				<Link to="/work">Description</Link>
+				<div className="buttons">
+					<Link to="/">Site</Link>
+					<Link to="/work">Description</Link>
+				</div>
 			</div>
 		</div>
 	);
