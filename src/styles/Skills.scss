@@ -32,11 +32,21 @@
 .skills__icons {
 	@include content-glass-style;
 	padding: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	.icon__container {
+		@include content-glass-style;
+		background: rgba(0, 0, 0, 0.363);
+		width: 140px;
+		height: 140px;
+		margin: 10px;
+		padding: 30px;
+		animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+	}
 	img {
 		object-fit: cover;
-		background-color: $main-blurColor;
-		width: 150px;
-		height: 150px;
-		margin: 10px;
+		width: 100%;
+		height: 100%;
 	}
 }
