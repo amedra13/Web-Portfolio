@@ -87,12 +87,19 @@
 
 .spinner {
 	background-color: $main-blurColor;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
 	height: 40%;
 	width: 50%;
 	border-radius: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	p {
+		font-size: 50px;
+		margin: 0;
+		margin-right: 20px;
+		color: $main-titleColor;
+	}
 }
 .loading-enter {
 	opacity: 0;
@@ -100,14 +107,34 @@
 }
 .loading-enter-active {
 	opacity: 1;
-	transform: translateX(0);
-	transition: opacity 300ms, transform 300ms;
+	transform: scale(1);
+	transition: opacity 500ms, transform 500ms;
 }
 .loading-exit {
+	transform: scale(1);
 	opacity: 1;
 }
 .loading-exit-active {
+	transform: scale(0.3);
+	opacity: 0;
+	transition: opacity 400ms, transform 500ms;
+}
+
+.formAnimation-enter {
 	opacity: 0;
 	transform: scale(0.9);
-	transition: opacity 300ms, transform 300ms;
+}
+.formAnimation-enter-active {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 500ms, transform 500ms;
+}
+.formAnimation-exit {
+	transform: scale(1);
+	opacity: 1;
+}
+.formAnimation-exit-active {
+	transform: scale(0.3);
+	opacity: 0;
+	transition: opacity 400ms, transform 500ms;
 }

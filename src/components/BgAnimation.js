@@ -2,7 +2,7 @@ import React from 'react';
 
 const BgAnimation = () => {
 	return (
-		<div class="background">
+		<div className="background">
 			<span></span>
 			<span></span>
 			<span></span>

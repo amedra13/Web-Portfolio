@@ -12,10 +12,6 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 function App() {
 	let location = useLocation();
-	const print = (location) => {
-		console.log(location);
-		return location.key;
-	};
 
 	return (
 		<div className="app">
@@ -24,7 +20,7 @@ function App() {
 			<div className="app__rightSide">
 				<TransitionGroup component={null}>
 					<CSSTransition
-						key={print(location)}
+						key={location.key}
 						unmountOnExit
 						classNames="fade"
 						timeout={1500}

@@ -1,10 +1,11 @@
 import React from 'react';
-import BounceLoader from 'react-spinners/BounceLoader';
+import PulseLoader from 'react-spinners/PulseLoader';
 
 const LoadingSpinner = () => {
 	return (
 		<div className="spinner">
-			<BounceLoader color="rgb(199, 209, 255)" size={100} />
+			<p>Sending </p>
+			<PulseLoader color="rgb(199, 209, 255)" size={15} margin={4} />
 		</div>
 	);
 };
