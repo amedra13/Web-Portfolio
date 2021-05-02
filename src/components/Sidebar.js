@@ -14,7 +14,7 @@ const Sidebar = () => {
 	return (
 		<div className="sidebar">
 			<div className="sidebar__container">
-				<Link to='/' className='imgLink'>
+				<Link to="/" className="imgLink">
 					<img src={Logo} alt="amsportscards" />
 				</Link>
 
@@ -22,18 +22,22 @@ const Sidebar = () => {
 					<NavLink to="/about" activeClassName="selected">
 						<AccountCircleIcon />
 						About
+						<span className="animated-bar"></span>
 					</NavLink>
 					<NavLink to="/skills" activeClassName="selected">
 						<KeyboardIcon />
 						Skills
+						<span className="animated-bar"></span>
 					</NavLink>
 					<NavLink to="/work" activeClassName="selected">
 						<WorkIcon />
 						Work
+						<span className="animated-bar"></span>
 					</NavLink>
 					<NavLink to="/contact" activeClassName="selected">
 						<AlternateEmailIcon />
 						Contact
+						<span className="animated-bar"></span>
 					</NavLink>
 				</div>
 				<div className="sidebar__iconLinks">

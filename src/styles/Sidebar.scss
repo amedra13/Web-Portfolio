@@ -34,8 +34,8 @@
 			margin-right: 10px;
 		}
 		a {
+			position: relative;
 			border: 1px solid rgba(255, 255, 255, 0.18);
-			border-right: 7px solid transparent;
 			flex: 1;
 			text-decoration: none;
 			color: white;
@@ -49,14 +49,28 @@
 				svg {
 					color: $highlight-icon;
 				}
+				.animated-bar {
+					background-color: $glass-brightPink;
+					height: 100%;
+					transition: height 300ms;
+				}
 			}
 		}
 		.selected {
 			background: rgba(232, 160, 233, 0.219);
-			border-right: 7px solid $glass-brightPink;
 			svg {
 				color: $highlight-icon;
 			}
+			.animated-bar {
+				background-color: $glass-brightPink;
+				height: 100%;
+			}
+		}
+		.animated-bar {
+			position: absolute;
+			right: 0;
+			height: 0;
+			width: 7px;
 		}
 	}
 	.sidebar__iconLinks {
