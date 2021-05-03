@@ -29,7 +29,6 @@ const Work = () => {
 				title="Spotify Clone"
 				delay="1.7s"
 				description="With the use of the offical Spotify Api, a user is able to import the playlists from their original Spotfy account and play all their favorite songs. All users are able to search, play,favorite songs based on artists name, genre, or playlist "
-				websiteLink="https://spotify-clone-1867c.web.app/"
 				projectLink="/work/spotify"
 				tools={[ReactLogo, ReduxLogo, SpotifyLogo]}
 			/>
@@ -37,7 +36,6 @@ const Work = () => {
 				image={Nobu}
 				title="Nobu Website"
 				delay="1.9s"
-				websiteLink="https://nobu-clone.web.app/"
 				projectLink="/work/nobu"
 				description="One of the projects I first created. With my previous place of employment as inspiration for this project, I designed it as close as possible to the original compnay site. Users are able to browse the services the company offers and make a mock reservation."
 				tools={[ReactLogo, ReduxLogo, MaterialUILogo]}

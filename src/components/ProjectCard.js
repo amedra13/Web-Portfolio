@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({
@@ -10,9 +10,6 @@ const ProjectCard = ({
 	projectLink,
 	tools,
 }) => {
-	useEffect(() => {
-		console.log(tools);
-	});
 	return (
 		<div className="projectCard" style={{ animationDelay: `${delay}` }}>
 			<div className="projectCard__imgContainer">
@@ -24,7 +21,7 @@ const ProjectCard = ({
 				<h3>Tools Used: </h3>
 				<div className="tools">
 					{tools.map((tool) => (
-						<div className="icon">
+						<div className="icon" key={tool}>
 							<img src={tool} alt="" />
 						</div>
 					))}

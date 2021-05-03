@@ -2,8 +2,6 @@
 	@include content-styling;
 	background-color: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	// backdrop-filter: blur(6px);
-	// -webkit-backdrop-filter: blur(6px);
 	display: grid;
 	grid-template-columns: repeat(1fr);
 	grid-template-rows: 10% 90%;
@@ -30,6 +28,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	.projectCard__imgContainer {
 		width: 350px;
 		height: 300px;
@@ -95,6 +94,7 @@
 			padding: 7px 25px;
 			font-size: 18px;
 			font-family: $main-font;
+			font-style: italic;
 			border-radius: 30px;
 			background-color: rgba(0, 238, 255, 0.432);
 			border: 2px solid rgba(0, 238, 255, 0.432);

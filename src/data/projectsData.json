@@ -1,0 +1,58 @@
+{
+	"twitter": {
+		"name": "Twitter Clone",
+		"highlightsIntro": "My latest project was a Full-Stack application and though there were a couple of challenges during the building of this app, I was able to implement essential social media features that users are accustomed to performing",
+		"highlightsList": [
+			"As my first sizeable Full-stack application, I was able to successfully build the app with a MVC structure with the use of React, a Node RESTful API, and Mongoose Database",
+			"Successfully implemented backend verification and authorization middleware using JWT",
+			"Sensitive routes are protected and will cause users to be redirected",
+			"Users can search other users, and interact through messages, posts, comments",
+			"Users can update profile information and the whole app will update accordingly",
+			"Persisted state of logged in user after page refresh with Redux-Persist "
+		],
+		"improvementsIntro": "Even though the app can fully function, there are still some improvements I have in mind that will improve overall user experience with the next major update",
+		"improvementsList": [
+			"Currently there is no notification system that will notify the user when they have recieved new messages or comments",
+			"Give the ability of users to 'Tag' other users in posts",
+			"Currently, profile update does not support change of profiles pictures",
+			"Currently the messaging system requires an state refresh to send and receive new messages. Will implment Socket IO in the next update in order to ensure real-time data transfer and notifications"
+		],
+		"link": "/about",
+		"image": "/static/media/twitterGif.f82e5141.gif"
+	},
+	"nobu": {
+		"name": "Nobu Website",
+		"highlightsIntro": "Using a previous source of employemnt as aspiration, I cloned their website as closely as possible with the goal of understanding Material UI components and implmenting with Reactjs",
+		"highlightsList": [
+			"Using Redux and Material UI, I was able to create and elegantly styled reservation booking system, in which as user can browse the different rooms offered, input the number of people that will be on the reservation, and calculate the cost of the room(s) in the reservation",
+			"Fully responsive to all web sizes",
+			"Successful implementation of multiple MaterialUI Grid Component to make page sections responsive to differernt screen sizes"
+		],
+		"improvementsIntro": "With the goal of grasping a better understanding of MaterialUI, Redux, and React, I can now see there are a couple updates that could be made to make improve the user experience",
+		"improvementsList": [
+			"With the use of a Backend and Database, we could implement a fully functioning booking system that can check for inventory and make reservations accordingly. Currently booking system is purely visual",
+			"Implementation of React-Transition group to improve a smooth transition between the web pages and routes",
+			"With the implementation of Emailjs in order to confirm the reservation and email the user a copy of their confirmation"
+		],
+		"link": "https://nobu-clone.web.app/",
+		"image": "/static/media/twitterAccount.9087027b.jpg"
+	},
+	"spotify": {
+		"name": "Spotify Clone",
+		"highlightsIntro": "Without using my own custom Node RESTful API, I had to use the official Spotify API in order create a functioning music playing web app. In this project, my goal was to be able to interact with a API that is not of my own creation and use different methods to authorize and login a user ",
+		"highlightsList": [
+			"Successfully getting authorization to use and interact with the Spotify API was initially difficult, due to needing a Spotify Premium Account to interact with it.",
+			"Implement use of Spotify Authorization in order to authorize and login to application",
+			"Ability to import playlists, play songs from different albums, artists, playlists, and search the spotify database for new interests with the use of the Spotify API",
+			"App will play songs and playlists, and the UI will show a visual represation of album cover and current song status"
+		],
+		"improvementsIntro": "Creating this project has been one of the most challenging due finding the Spotify API difficult to work with, and as such I belive their could be major improvements in the next update",
+		"improvementsList": [
+			"Currently a user needs to have a Spotify Premium Account in order to play audio with this web player. Else, User can only search for different songs. artists, playists",
+			"Ability to connect with other users and share songs,playlists, albums",
+			"Implement a User profile page that will show a great represenation of user account and interest to other users "
+		],
+		"link": "https://spotify-clone-1867c.web.app/",
+		"image": "/static/media/twitterAccount.9087027b.jpg"
+	}
+}
