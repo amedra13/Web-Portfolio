@@ -1,6 +1,6 @@
 .sidebar {
 	flex: $left-side-width;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .sidebar__container {
 	height: 100%;
@@ -35,7 +35,7 @@
 		}
 		a {
 			position: relative;
-			border: 1px solid rgba(255, 255, 255, 0.18);
+			border-top: 1px solid rgba(255, 255, 255, 0.18);
 			flex: 1;
 			text-decoration: none;
 			color: white;
@@ -55,6 +55,9 @@
 					transition: height 300ms;
 				}
 			}
+		}
+		a:last-child {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 		}
 		.selected {
 			background: rgba(232, 160, 233, 0.219);
