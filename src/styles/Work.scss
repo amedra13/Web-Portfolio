@@ -10,12 +10,17 @@
 	font-family: $main-font;
 	.work__header {
 		@include content-glass-style;
-		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		grid-column: 1/4;
 		margin-bottom: 10px;
 		padding-left: 3%;
 		text-transform: capitalize;
 		font-style: italic;
+		h1 {
+			margin: 0;
+		}
 	}
 }
 

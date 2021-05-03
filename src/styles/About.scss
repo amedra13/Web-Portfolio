@@ -33,6 +33,7 @@
 	padding: 40px;
 	h1 {
 		@include title-h1-style;
+		text-align: center;
 	}
 	p {
 		@include body-p-style;
