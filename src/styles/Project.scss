@@ -24,11 +24,11 @@
 	font-style: italic;
 }
 .project__highlights {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	border: 4px solid orange;
+	margin: 0;
 	.highlights__description {
 		padding: 25px;
-		grid-column: 1/3;
+		height: 100%;
 		h2 {
 			color: $main-titleColor;
 			letter-spacing: 1px;
@@ -36,23 +36,23 @@
 		}
 	}
 	.highlights__imgContainer {
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		img {
-			width: 300px;
-			height: 300px;
+			width: 100%;
+			height: 100%;
 			object-fit: cover;
 			object-position: left;
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
+			border-radius: 10px;
 		}
 	}
 }
 .project__improvements {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	.highlights__description {
+	.improvements__description {
 		padding: 25px;
 		grid-column: 2/4;
 		height: 100%;
@@ -66,8 +66,19 @@
 			border-radius: 10px;
 		}
 	}
-	.highlights__imgContainer {
-		border: 2px solid lightblue;
+	.improvements__imgContainer {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid white;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: left;
+			border-radius: 10px;
+		}
 	}
 }
 .project__link {
