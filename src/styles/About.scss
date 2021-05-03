@@ -1,20 +1,35 @@
 .about {
 	@include content-styling;
-	@include content-grid-stepup;
 	background: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	border-radius: 10px;
 	font-family: $main-font;
 	height: 100%;
+	padding: 25px 25px 15px 25px;
+}
+.about__grid {
+	height: 100%;
 }
 
 .about__header {
 	@include content-glass-style;
-	@include header-container;
+	text-transform: capitalize;
+	text-align: center;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	min-height: 100px;
+	height: 100%;
+	h1 {
+		margin: 0;
+	}
 }
 .about__container {
 	@include content-glass-style;
+	height: 100%;
 	padding: 40px;
 	h1 {
 		@include title-h1-style;
@@ -30,16 +45,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100%;
 	img {
 		width: 40%;
 		border-radius: 50%;
 		background-color: blue;
-		margin-bottom: 20px;
 		border: 5px solid white;
 	}
 	.about__interests {
 		border-radius: 10px;
-		padding: 10px 30px;
 		flex: 1;
 		.icon {
 			width: 100px;
@@ -56,13 +70,10 @@
 			.icon__container {
 				@include content-glass-style;
 				background: rgba(0, 0, 0, 0.685);
-				// background: rgba(199, 209, 255, 0.363);
 				width: 140px;
 				height: 140px;
 				margin: 10px;
 				padding: 10px;
-				// animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s
-				// both;
 				img {
 					object-fit: cover;
 					width: 100%;
