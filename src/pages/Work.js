@@ -11,6 +11,7 @@ import SpotifyLogo from '../images/spotifyLogo.png';
 import MaterialUILogo from '../images/materialuiLogo.png';
 
 const Work = () => {
+	window.scrollTo(0, 0);
 	return (
 		<div className="work">
 			<div className="work__header">

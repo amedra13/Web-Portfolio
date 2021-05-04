@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const Project = () => {
+	window.scrollTo(0, 0);
 	let { project } = useParams();
 	const matches = useMediaQuery('(max-width:960px)');
 

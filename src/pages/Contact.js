@@ -20,6 +20,7 @@ const Contact = () => {
 
 	return (
 		<div className="contact">
+			{window.scrollTo(0, 0)}
 			<div className="contact__header">
 				<h1>Lets make something special together</h1>
 			</div>

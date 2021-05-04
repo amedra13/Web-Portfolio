@@ -1,6 +1,8 @@
 .sidebar {
-	flex: $left-side-width;
-	margin-right: 10px;
+	height: 800px;
+	position: sticky;
+	top: 10px;
+	align-self: flex-start;
 }
 .sidebar__container {
 	height: 100%;

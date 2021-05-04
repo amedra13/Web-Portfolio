@@ -13,6 +13,7 @@ import NpmLogo from '../images/npmLogo.png';
 import Grid from '@material-ui/core/Grid';
 
 const Skills = () => {
+	window.scrollTo(0, 0);
 	return (
 		<div className="skills">
 			<Grid container spacing={2} className="skills__grid">
