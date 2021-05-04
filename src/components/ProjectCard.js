@@ -18,7 +18,7 @@ const ProjectCard = ({
 			<h1>{title}</h1>
 			<div className="projectCard__description">
 				<p>{description}</p>
-				<h3>Tools Used: </h3>
+				<h3>Tools Used </h3>
 				<div className="tools">
 					{tools.map((tool) => (
 						<div className="icon" key={tool}>

@@ -6,11 +6,10 @@ const Home = () => {
 	return (
 		<div className="home">
 			<div className="home__header">
-				<h1>Welcome to my portfolio!</h1>
-				<h1>
-					My name is <span>Andres</span>
-				</h1>
-				<p>Front End Developer</p>
+				<h2>Welcome to my portfolio!</h2>
+				<h2>My name is</h2>
+				<h1>Andres,</h1>
+				<p>a Frontend Developer</p>
 			</div>
 			<div className="home__contact">
 				<Link to="contact">Reach out to me!</Link>
