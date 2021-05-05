@@ -2,24 +2,18 @@
 	@include content-styling;
 	background-color: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	display: grid;
-	grid-template-columns: repeat(1fr);
-	grid-template-rows: 10% 90%;
-	grid-gap: 0 15px;
-	padding: 15px;
 	font-family: $main-font;
+	height: 100%;
+	padding: 25px 25px 15px 25px;
 	.work__header {
 		@include content-glass-style;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		grid-column: 1/4;
-		margin-bottom: 10px;
-		padding-left: 3%;
-		text-transform: capitalize;
-		h1 {
-			margin: 0;
-		}
+		@include header-container;
+	}
+}
+
+.work__grid {
+	height: 100%;
+	.work__item {
 	}
 }
 
@@ -28,15 +22,17 @@
 	animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s
 		both;
 	height: 100%;
-	padding: 30px;
+	padding: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 
 	.projectCard__imgContainer {
-		width: 350px;
+		min-width: 250px;
 		height: 300px;
 		margin: 0 auto;
+		margin-bottom: 10px;
 		border-radius: 10px;
 		img {
 			object-fit: cover;
@@ -49,6 +45,7 @@
 	h1 {
 		text-align: center;
 		color: $main-titleColor;
+		margin: 0;
 	}
 	.projectCard__description {
 		// background: $main-blurColor;
@@ -56,12 +53,12 @@
 		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex: 1;
-		padding: 20px;
+		// padding: 20px;
 		p {
 			font-size: 15px;
-			margin: 0;
+			margin: 10px 0;
 		}
 		h3 {
 			color: $main-titleColor;
@@ -73,6 +70,7 @@
 			display: flex;
 			justify-content: space-evenly;
 			align-items: center;
+			margin: 20px 0;
 		}
 		.icon {
 			width: 90px;

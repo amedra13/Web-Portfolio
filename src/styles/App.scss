@@ -13,15 +13,16 @@ $main-highlightBlue: rgb(0, 238, 255);
 * {
 	box-sizing: border-box;
 }
+html {
+	background-color: rgb(1, 12, 39);
+}
 
 .app {
 	display: grid;
 	grid-template-columns: 15% 85%;
-	grid-gap: 10px;
 	min-height: 100vh;
 	width: 100%;
 	box-sizing: border-box;
-	// padding-right: 20px;
 }
 ::-webkit-scrollbar {
 	display: none;
@@ -30,6 +31,7 @@ $main-highlightBlue: rgb(0, 238, 255);
 	box-sizing: border-box;
 	position: relative;
 	height: 100%;
+	margin-left: 10px;
 }
 
 @import './BgAnimation.scss';

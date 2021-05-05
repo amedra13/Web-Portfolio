@@ -17,7 +17,7 @@ const Skills = () => {
 	return (
 		<div className="skills">
 			<Grid container spacing={2} className="skills__grid">
-				<Grid item xs={12}>
+				<Grid item xs={12} className="skills__item">
 					<div className="skills__header">
 						<h1>Wondering what tools I have used?</h1>
 					</div>
@@ -51,7 +51,7 @@ const Skills = () => {
 						</div>
 					</div>
 				</Grid>
-				<Grid item md={12} lg={6}>
+				<Grid item md={12} lg={6} className="skills__item">
 					<div className="skills__icons">
 						<div className="icon__container" style={{ animationDelay: '2.2s' }}>
 							<img src={JavascriptLogo} alt="" />

@@ -15,8 +15,8 @@ const ProjectCard = ({
 			<div className="projectCard__imgContainer">
 				<img src={image} alt="" />
 			</div>
-			<h1>{title}</h1>
 			<div className="projectCard__description">
+				<h1>{title}</h1>
 				<p>{description}</p>
 				<h3>Tools Used </h3>
 				<div className="tools">
