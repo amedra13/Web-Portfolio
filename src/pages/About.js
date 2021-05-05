@@ -11,12 +11,12 @@ const About = () => {
 	return (
 		<div className="about">
 			<Grid container spacing={2} className="about__grid">
-				<Grid item xs={12}>
+				<Grid item xs={12} className="about__itemHeader">
 					<div className="about__header">
 						<h1>A little bit about Myself</h1>
 					</div>
 				</Grid>
-				<Grid item xs={12} md={6}>
+				<Grid item xs={12} md={6} className="about__item">
 					<div className="about__container">
 						<h1>Who am I ?</h1>
 						<p>
@@ -36,7 +36,7 @@ const About = () => {
 						</p>
 					</div>
 				</Grid>
-				<Grid item xs={12} md={6}>
+				<Grid item xs={12} md={6} className="about__item">
 					<div className="about__me">
 						<img src={ProfilePhoto} alt="andres medrano" />
 						<p>Redwood City, CA</p>
