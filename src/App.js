@@ -8,16 +8,20 @@ import Work from './pages/Work';
 import BgAnimation from './components/BgAnimation';
 import Project from './pages/Project';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import BurgerMenu from './components/BurgerMenu';
 
 import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 function App() {
 	let location = useLocation();
+	const matches = useMediaQuery('(max-width:900px)');
 
 	return (
-		<div className="app">
+		<div className={`app ${matches && 'shrink'}`}>
 			<BgAnimation />
-			<Sidebar />
+			<Sidebar shrink={matches} />
+			{matches && <BurgerMenu />}
 			<div className="app__rightSide">
 				<TransitionGroup component={null}>
 					<CSSTransition

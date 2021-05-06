@@ -24,6 +24,9 @@ html {
 	width: 100%;
 	box-sizing: border-box;
 }
+.shrink {
+	grid-template-columns: 100%;
+}
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -38,6 +41,7 @@ html {
 @import './KeyFrames.scss';
 @import './Transitions.scss';
 @import './Sidebar.scss';
+@import './burgerMenu.scss';
 @import './Home.scss';
 @import './About.scss';
 @import './Contact.scss';

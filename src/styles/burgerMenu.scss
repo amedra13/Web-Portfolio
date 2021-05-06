@@ -1,0 +1,14 @@
+.burgerMenu {
+	background-color: rgba(1, 12, 39, 0.308);
+
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 75px;
+	height: 75px;
+	color: lightblue;
+}

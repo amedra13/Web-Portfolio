@@ -9,13 +9,10 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import WorkIcon from '@material-ui/icons/Work';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-const Sidebar = () => {
-	const matches = useMediaQuery('(max-width:900px)');
-
+const Sidebar = ({ shrink }) => {
 	return (
-		<div className="sidebar">
+		<div className={`sidebar ${shrink && 'hide'}`}>
 			<div className="sidebar__container">
 				<Link to="/" className="imgLink">
 					<img src={Logo} alt="amsportscards" />
@@ -24,22 +21,22 @@ const Sidebar = () => {
 				<div className="sidebar__links">
 					<NavLink to="/about" activeClassName="selected">
 						<AccountCircleIcon />
-						{!matches && <p>About</p>}
+						<p>About</p>
 						<span className="animated-bar"></span>
 					</NavLink>
 					<NavLink to="/skills" activeClassName="selected">
 						<KeyboardIcon />
-						{!matches && <p>Skills</p>}
+						<p>Skills</p>
 						<span className="animated-bar"></span>
 					</NavLink>
 					<NavLink to="/work" activeClassName="selected">
 						<WorkIcon />
-						{!matches && <p>Work</p>}
+						<p>Work</p>
 						<span className="animated-bar"></span>
 					</NavLink>
 					<NavLink to="/contact" activeClassName="selected">
 						<AlternateEmailIcon />
-						{!matches && <p>Contact</p>}
+						<p>Contact</p>
 						<span className="animated-bar"></span>
 					</NavLink>
 				</div>
