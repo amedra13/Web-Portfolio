@@ -13,16 +13,14 @@
 	font-family: $main-font;
 	text-align: center;
 	margin: 0 auto;
-	h1:first-child {
-		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-	}
+
 	h2 {
-		font-size: 70px;
+		font-size: 5vw;
 		margin: 0;
 		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
 	}
 	h1 {
-		font-size: 120px;
+		font-size: 9vw;
 		color: red;
 		margin-bottom: -10px;
 	}
@@ -30,7 +28,7 @@
 	p {
 		margin: 0;
 		margin-bottom: 30px;
-		font-size: 20px;
+		font-size: 1.5vw;
 		font-style: italic;
 		color: $main-titleColor;
 		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
@@ -40,10 +38,8 @@
 	}
 }
 .home__contact {
-	margin-left: 10%;
-	width: 200px;
-	height: 50px;
 	margin: 30px auto;
+	padding: 10px 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,11 +54,30 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		font-size: 18px;
+		font-size: 1.5vw;
 		font-family: $main-font;
 	}
 	&:hover {
 		color: rgb(0, 238, 255);
 		background-color: rgb(255, 255, 255);
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.home__header {
+		h2 {
+			font-size: 7vw;
+		}
+		h1 {
+			font-size: 12vw;
+		}
+		p {
+			font-size: 2.5vw;
+		}
+	}
+	.home__contact {
+		a {
+			font-size: 2.5vw;
+		}
 	}
 }
