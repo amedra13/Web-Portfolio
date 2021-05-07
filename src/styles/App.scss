@@ -1,14 +1,4 @@
-$right-side-width: 0.88;
-$left-side-width: 0.12;
-$glass-lightPink: rgba(232, 160, 233, 0.15);
-$glass-brightPink: rgb(246, 32, 250);
-$highlight-icon: rgb(246, 133, 248);
-$main-font: 'Russo One', sans-serif;
-$main-bgColor: rgb(1, 12, 39);
-$main-blurColor: rgba(219, 181, 238, 0.171);
-$main-titleColor: rgb(199, 209, 255);
-$main-highlightBlue: rgb(0, 238, 255);
-
+@import './Globals.scss';
 @import './Mixins.scss';
 * {
 	box-sizing: border-box;
@@ -34,7 +24,6 @@ html {
 	box-sizing: border-box;
 	position: relative;
 	height: 100%;
-	border: 1px solid yellow;
 	// margin-left: 10px;
 }
 

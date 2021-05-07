@@ -1,5 +1,4 @@
 .about {
-	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
@@ -7,12 +6,11 @@
 	background: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	font-family: $main-font;
-	border: 2px solid red;
 	height: 100%;
-	padding: 25px;
+	padding: 20px;
 }
 .about__header {
-	border-radius: 10px;
+	border-radius: $border-radius;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
@@ -25,48 +23,57 @@
 	height: 10%;
 	h1 {
 		margin: 0;
+		font-size: $h1-large-screen;
 	}
 }
 .about__grid {
 	height: 90%;
-	border: 1px solid greenyellow;
+	padding-top: 20px;
+
 	.about__item {
-		border: 1px solid rgba(255, 255, 255, 0.18);
-		backdrop-filter: blur(15px);
-		-webkit-backdrop-filter: blur(15px);
-		padding: 40px;
+		padding-right: 0;
+		padding-left: 10px;
+		h1 {
+			font-size: $h1-large-screen;
+			text-align: center;
+		}
+		p {
+			font-size: $bodyText-large-screen;
+		}
+	}
+	.about__item:first-child {
+		padding-left: 0px;
+		padding-right: 10px;
 	}
 }
-
-// .about__container {
-// 	@include content-glass-style;
-// 	height: 100%;
-// 	padding: 40px;
-// 	h1 {
-// 		@include title-h1-style;
-// 		text-align: center;
-// 	}
-// 	p {
-// 		@include body-p-style;
-// 	}
-// }
+.item__container {
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	height: 100%;
+	border-radius: $border-radius;
+	padding: 30px;
+}
 
 .about__me {
-	// @include content-glass-style;
-	// padding: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100%;
 	img {
 		width: 40%;
 		border-radius: 50%;
-		background-color: blue;
 		border: 5px solid white;
 	}
 	.about__interests {
 		border-radius: 10px;
+		padding: 30px;
 		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		p {
+			margin: 0;
+		}
 		.icon {
 			width: 100px;
 			height: 100px;
@@ -82,8 +89,8 @@
 			.icon__container {
 				@include content-glass-style;
 				background: rgba(0, 0, 0, 0.685);
-				width: 8vw;
-				height: 8vw;
+				width: $icon-large-screen;
+				height: $icon-large-screen;
 				margin: 10px;
 				padding: 10px;
 				img {
@@ -96,11 +103,49 @@
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.about__item {
+		p {
+			font-size: $bodyText-middle-screen !important;
+		}
+	}
+	.interests {
+		.icon__container {
+			width: $icon-middle-screen !important;
+			height: $icon-middle-screen !important;
+		}
+	}
+}
+
 @media only screen and (max-width: 960px) {
 	.about {
 		height: auto;
 	}
 	.about__header {
 		height: 120px;
+		h1 {
+			font-size: $h1-small-screen;
+		}
+	}
+	.about__item {
+		padding: 0 !important;
+
+		h1 {
+			font-size: $h1-small-screen !important;
+		}
+		p {
+			font-size: $bodyText-small-screen !important;
+		}
+	}
+	.about__item:first-child {
+		padding-bottom: 20px !important;
+	}
+
+	.interests {
+		margin-top: 30px;
+		.icon__container {
+			width: $icon-small-screen !important;
+			height: $icon-small-screen !important;
+		}
 	}
 }

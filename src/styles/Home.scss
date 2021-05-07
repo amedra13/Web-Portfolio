@@ -15,12 +15,12 @@
 	margin: 0 auto;
 
 	h2 {
-		font-size: 5vw;
+		font-size: $intro-large-screen;
 		margin: 0;
 		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s both;
 	}
 	h1 {
-		font-size: 9vw;
+		font-size: $name-large-screen;
 		color: red;
 		margin-bottom: -10px;
 	}
@@ -28,7 +28,7 @@
 	p {
 		margin: 0;
 		margin-bottom: 30px;
-		font-size: 1.5vw;
+		font-size: $bodyText-large-screen;
 		font-style: italic;
 		color: $main-titleColor;
 		animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
@@ -54,7 +54,7 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		font-size: 1.5vw;
+		font-size: $bodyText-large-screen;
 		font-family: $main-font;
 	}
 	&:hover {
@@ -66,18 +66,18 @@
 @media only screen and (max-width: 900px) {
 	.home__header {
 		h2 {
-			font-size: 7vw;
+			font-size: $intro-small-screen;
 		}
 		h1 {
-			font-size: 12vw;
+			font-size: $name-small-screen;
 		}
 		p {
-			font-size: 2.5vw;
+			font-size: $bodyText-small-screen;
 		}
 	}
 	.home__contact {
 		a {
-			font-size: 2.5vw;
+			font-size: $bodyText-small-screen;
 		}
 	}
 }

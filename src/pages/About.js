@@ -15,24 +15,27 @@ const About = () => {
 			</div>
 			<Grid container className="about__grid">
 				<Grid item xs={12} md={6} className="about__item">
-					<h1>Who am I ?</h1>
-					<p>
-						I am a front-end developer passionate with React.js! I am a problem
-						solver, and I love being able to create responsive effects.
-					</p>
-					<p>
-						I am a proud hispanic currently residing in the Bay Area. Aside from
-						my days in coding, I also love sports, travelling, outdoor
-						activities, and my family.
-					</p>
-					<p>
-						Ever since I’ve entered the world of coding, I’ve been sucked in
-						since, and I hope to find the opportunity to grow and learn more as
-						a developer.
-					</p>
+					<div className="item__container">
+						<h1>Who am I ?</h1>
+						<p>
+							I am a front-end developer passionate with React.js! I am a
+							problem solver, and I love being able to create responsive
+							effects.
+						</p>
+						<p>
+							I am a proud hispanic currently residing in the Bay Area. Aside
+							from my days in coding, I also love sports, travelling, outdoor
+							activities, and my family.
+						</p>
+						<p>
+							Ever since I’ve entered the world of coding, I’ve been sucked in
+							since, and I hope to find the opportunity to grow and learn more
+							as a developer.
+						</p>
+					</div>
 				</Grid>
 				<Grid item xs={12} md={6} className="about__item">
-					<div className="about__me">
+					<div className="item__container about__me">
 						<img src={ProfilePhoto} alt="andres medrano" />
 						<p>Redwood City, CA</p>
 						<div className="about__interests">
