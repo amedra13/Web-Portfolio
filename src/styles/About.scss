@@ -1,30 +1,11 @@
 .about {
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px);
-	color: white;
-	background: $main-blurColor;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	font-family: $main-font;
-	height: 100%;
-	padding: 20px;
+	@include glass-styling;
+	@include right-side-structure;
+	border-radius: 0;
 }
 .about__header {
-	border-radius: $border-radius;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px);
-	color: white;
-	text-transform: capitalize;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 10%;
-	h1 {
-		margin: 0;
-		font-size: $h1-large-screen;
-	}
+	@include glass-styling;
+	@include page-header-structure;
 }
 .about__grid {
 	height: 90%;
@@ -34,8 +15,10 @@
 		padding-right: 0;
 		padding-left: 10px;
 		h1 {
-			font-size: $h1-large-screen;
+			font-size: $bodyTitle-large-screen;
+			color: $main-titleColor;
 			text-align: center;
+			margin: 0;
 		}
 		p {
 			font-size: $bodyText-large-screen;
@@ -47,12 +30,9 @@
 	}
 }
 .item__container {
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px);
+	@include glass-styling;
 	height: 100%;
-	border-radius: $border-radius;
-	padding: 30px;
+	padding: 30px 3vw;
 }
 
 .about__me {
@@ -65,38 +45,32 @@
 		border: 5px solid white;
 	}
 	.about__interests {
-		border-radius: 10px;
-		padding: 30px;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		p {
 			margin: 0;
+			text-align: center;
 		}
-		.icon {
-			width: 100px;
-			height: 100px;
-			background-color: transparent;
-			color: red;
-			border: none;
-		}
+
 		.interests {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			align-items: center;
 			.icon__container {
-				@include content-glass-style;
-				background: rgba(0, 0, 0, 0.685);
+				// @include content-glass-style;
+				border-radius: $border-radius;
+				background: $icon-bgColor;
 				width: $icon-large-screen;
 				height: $icon-large-screen;
-				margin: 10px;
 				padding: 10px;
 				img {
 					object-fit: cover;
 					width: 100%;
 					height: 100%;
+					border: none;
 				}
 			}
 		}
@@ -131,7 +105,7 @@
 		padding: 0 !important;
 
 		h1 {
-			font-size: $h1-small-screen !important;
+			font-size: $bodyTitle-small-screen !important;
 		}
 		p {
 			font-size: $bodyText-small-screen !important;
@@ -139,6 +113,9 @@
 	}
 	.about__item:first-child {
 		padding-bottom: 20px !important;
+	}
+	.item__container {
+		padding: 30px 5vw;
 	}
 
 	.interests {

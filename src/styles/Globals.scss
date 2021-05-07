@@ -9,6 +9,7 @@ $main-blurColor: rgba(219, 181, 238, 0.171);
 $main-titleColor: rgb(199, 209, 255);
 $main-highlightBlue: rgb(0, 238, 255);
 $border-radius: 10px;
+$icon-bgColor: rgba(0, 0, 0, 0.685);
 
 // <----------------- Response heights and widths ---------------------------->
 $intro-large-screen: 5vw;
@@ -24,6 +25,9 @@ $bodyText-small-screen: 2.5vw;
 $h1-large-screen: 2.5vw;
 $h1-small-screen: 5vw;
 
-$icon-large-screen: 6vw;
+$bodyTitle-large-screen: 5.5vw;
+$bodyTitle-small-screen: 10vw;
+
+$icon-large-screen: 7vw;
 $icon-middle-screen: 8vw;
-$icon-small-screen: 13vw;
+$icon-small-screen: 12vw;

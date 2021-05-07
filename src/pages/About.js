@@ -16,7 +16,7 @@ const About = () => {
 			<Grid container className="about__grid">
 				<Grid item xs={12} md={6} className="about__item">
 					<div className="item__container">
-						<h1>Who am I ?</h1>
+						<h1>Who am I?</h1>
 						<p>
 							I am a front-end developer passionate with React.js! I am a
 							problem solver, and I love being able to create responsive
@@ -47,7 +47,7 @@ const About = () => {
 							</p>
 							<div className="interests">
 								<div className="icon__container">
-									<img className="icon" src={Basketball} alt="" />
+									<img src={Basketball} alt="" />
 								</div>
 								<div className="icon__container">
 									<img className="icon" src={SportsCards} alt="" />
