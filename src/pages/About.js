@@ -15,7 +15,7 @@ const About = () => {
 			</div>
 			<Grid container className="about__grid">
 				<Grid item xs={12} md={6} className="about__item">
-					<div className="item__container">
+					<div className="item__container about__info">
 						<h1>Who am I?</h1>
 						<p>
 							I am a front-end developer passionate with React.js! I am a

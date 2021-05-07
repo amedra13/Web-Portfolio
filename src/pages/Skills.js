@@ -25,7 +25,7 @@ const Skills = () => {
 
 				<Grid item md={12} lg={6} className="skills__item">
 					<div className="skills__description">
-						<h1>Start of Coding Journey</h1>
+						<h1>Coding Journey</h1>
 						<div className="description__body">
 							<p>
 								Since beginning my journey learing to code nearly 3 years ago,
@@ -53,37 +53,37 @@ const Skills = () => {
 				</Grid>
 				<Grid item md={12} lg={6} className="skills__item">
 					<div className="skills__icons">
-						<div className="icon__container" style={{ animationDelay: '2.2s' }}>
+						<div className="icon__container" style={{ animationDelay: '2.4s' }}>
 							<img src={JavascriptLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '2.4s' }}>
+						<div className="icon__container" style={{ animationDelay: '2.6s' }}>
 							<img src={CssLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '2.6s' }}>
+						<div className="icon__container" style={{ animationDelay: '2.8s' }}>
 							<img src={HtmlLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '2.8s' }}>
+						<div className="icon__container" style={{ animationDelay: '3s' }}>
 							<img src={SassLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '3s' }}>
+						<div className="icon__container" style={{ animationDelay: '3.2s' }}>
 							<img src={ReactLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '3.2s' }}>
+						<div className="icon__container" style={{ animationDelay: '3.4s' }}>
 							<img src={ReduxLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '3.4s' }}>
+						<div className="icon__container" style={{ animationDelay: '3.6s' }}>
 							<img src={ReactRouterLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '3.6s' }}>
+						<div className="icon__container" style={{ animationDelay: '3.8s' }}>
 							<img src={MongoDbLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '3.8s' }}>
+						<div className="icon__container" style={{ animationDelay: '4s' }}>
 							<img src={NodeLogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '4s' }}>
+						<div className="icon__container" style={{ animationDelay: '4.2s' }}>
 							<img src={MaterialUILogo} alt="" />
 						</div>
-						<div className="icon__container" style={{ animationDelay: '4.2s' }}>
+						<div className="icon__container" style={{ animationDelay: '4.4s' }}>
 							<img src={NpmLogo} alt="" />
 						</div>
 					</div>

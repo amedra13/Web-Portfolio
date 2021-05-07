@@ -15,10 +15,7 @@
 		padding-right: 0;
 		padding-left: 10px;
 		h1 {
-			font-size: $bodyTitle-large-screen;
-			color: $main-titleColor;
-			text-align: center;
-			margin: 0;
+			@include bodyTitle-style;
 		}
 		p {
 			font-size: $bodyText-large-screen;
@@ -27,6 +24,11 @@
 	.about__item:first-child {
 		padding-left: 0px;
 		padding-right: 10px;
+	}
+	.about__info {
+		p {
+			animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+		}
 	}
 }
 .item__container {
