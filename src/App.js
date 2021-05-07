@@ -15,7 +15,7 @@ import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 
 function App() {
 	let location = useLocation();
-	const matches = useMediaQuery('(max-width:900px)');
+	const matches = useMediaQuery('(max-width:960px)');
 
 	return (
 		<div className={`app ${matches && 'shrink'}`}>
