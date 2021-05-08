@@ -4,10 +4,7 @@
 	border-radius: 0;
 }
 .about__header {
-	// @include glass-styling;
-	background: $main-blurColor;
-	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
-	border-radius: $border-radius;
+	@include glass-styling;
 	@include page-header-structure;
 }
 .about__grid {
@@ -66,10 +63,11 @@
 			align-items: center;
 			.icon__container {
 				// @include content-glass-style;
+				border: 2px solid lightblue;
 				border-radius: $border-radius;
 				background: $icon-bgColor;
-				width: $icon-large-screen;
-				height: $icon-large-screen;
+				width: 8vw;
+				height: 8vw;
 				padding: 10px;
 				img {
 					object-fit: cover;
@@ -86,12 +84,6 @@
 	.about__item {
 		p {
 			font-size: $bodyText-middle-screen !important;
-		}
-	}
-	.interests {
-		.icon__container {
-			width: $icon-middle-screen !important;
-			height: $icon-middle-screen !important;
 		}
 	}
 }
@@ -126,8 +118,8 @@
 	.interests {
 		margin-top: 30px;
 		.icon__container {
-			width: $icon-small-screen !important;
-			height: $icon-small-screen !important;
+			width: 15.5vw !important;
+			height: 15.5vw !important;
 		}
 	}
 }
