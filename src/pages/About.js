@@ -1,9 +1,9 @@
 import React from 'react';
 import ProfilePhoto from '../images/personIcon.jpg';
-import Basketball from '../images/recBasketballIcon.png';
-import SportsCards from '../images/sportscardsIcon.png';
-import Videogames from '../images/videogameIcon.png';
-import VirtualReality from '../images/vrIcon.png';
+import Basketball from '../images/basketball.png';
+import SportsCards from '../images/cards.png';
+import Videogames from '../images/controller.png';
+import VirtualReality from '../images/headset.png';
 import Grid from '@material-ui/core/Grid';
 
 const About = () => {
