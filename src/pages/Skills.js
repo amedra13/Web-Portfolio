@@ -28,20 +28,12 @@ const Skills = () => {
 						<h1>Coding Journey</h1>
 						<div className="description__body">
 							<p>
-								Since beginning my journey learing to code nearly 3 years ago,
-								I’ve taken traditional classes, online tutorials, and multiple
-								Udemy courses, to teach myself how to code and create great
-								looking applications
+								Since beginning my journey to learn to code nearly 3 years ago,
+								I have learned new technologies and applied them together in new
+								projects. The main area of my expertise is front-end
+								development, HTML, CSS, JS, React, and building new features and
+								animations
 							</p>
-							<p>
-								I love to learn new technologies and apply them to new projects
-								and see it all come together to fruition. One of the greatest
-								satisfations is the moment a new websites and applications that
-								are fast and easy to use, go live. The main area of my expertise
-								is front-end development, HTML, CSS, JS, React, and building new
-								features and animations
-							</p>
-
 							<p>
 								I also have experience working with the backend such as Node and
 								Express, and connecting my applications to a database such as

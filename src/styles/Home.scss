@@ -1,11 +1,12 @@
 .home {
 	@include glass-styling;
-	height: 100%;
+	@include right-side-structure;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 0;
 }
 .home__header {
 	font-family: $main-font;

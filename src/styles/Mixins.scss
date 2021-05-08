@@ -45,11 +45,11 @@
 //<--------------------------------------------------------------->
 @mixin glass-styling {
 	background: $main-blurColor;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
 	border-radius: $border-radius;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px);
+	// border: 1px solid rgba(255, 255, 255, 0.18);
+	// backdrop-filter: blur(15px);
+	// -webkit-backdrop-filter: blur(15px);
 	color: white;
 	font-family: $main-font;
 }
@@ -68,6 +68,8 @@
 @mixin right-side-structure {
 	height: 100%;
 	padding: 20px;
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 }
 @mixin bodyTitle-style {
 	font-size: $bodyTitle-large-screen;

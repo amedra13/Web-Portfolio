@@ -4,7 +4,10 @@
 	border-radius: 0;
 }
 .about__header {
-	@include glass-styling;
+	// @include glass-styling;
+	background: $main-blurColor;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
+	border-radius: $border-radius;
 	@include page-header-structure;
 }
 .about__grid {
