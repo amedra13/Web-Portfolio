@@ -113,6 +113,10 @@
 			&:hover {
 				color: $highlight-icon;
 			}
+			svg {
+				width: $sidebarIcon-size;
+				height: $sidebarIcon-size;
+			}
 		}
 	}
 }
