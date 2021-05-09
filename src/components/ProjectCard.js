@@ -28,9 +28,6 @@ const ProjectCard = ({
 				</div>
 
 				<div className="buttons">
-					{/* <a href={websiteLink} target="_blank" rel="noreferrer">
-						Site
-					</a> */}
 					<Link to={projectLink}>Description</Link>
 				</div>
 			</div>

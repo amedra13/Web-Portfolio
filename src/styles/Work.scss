@@ -1,19 +1,24 @@
 .work {
-	@include content-styling;
-	background-color: $main-blurColor;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	font-family: $main-font;
-	height: 100%;
-	padding: 25px 25px 15px 25px;
+	@include glass-styling;
+	@include right-side-structure;
+	border-radius: 0;
 	.work__header {
-		@include content-glass-style;
-		@include header-container;
+		@include glass-styling;
+		@include page-header-structure;
 	}
 }
 
 .work__grid {
-	height: 100%;
-	.work__item {
+	height: 90%;
+	padding-top: $work-grid-padding;
+	.work__item:nth-child(1) {
+		padding-right: calc(#{$work-grid-padding/ 2});
+	}
+	.work__item:nth-child(2) {
+		padding: 0 calc(#{$work-grid-padding/ 2});
+	}
+	.work__item:nth-child(3) {
+		padding-left: calc(#{$work-grid-padding/ 2});
 	}
 }
 
@@ -29,35 +34,32 @@
 	justify-content: space-between;
 
 	.projectCard__imgContainer {
-		min-width: 250px;
-		height: 300px;
+		width: 100%;
+		height: $cardImg-height-medium;
 		margin: 0 auto;
 		margin-bottom: 10px;
-		border-radius: 10px;
+		border-radius: $border-radius;
 		img {
 			object-fit: cover;
 			object-position: left;
 			height: 100%;
 			width: 100%;
-			border-radius: 10px;
+			border-radius: $border-radius;
 		}
 	}
-	h1 {
-		text-align: center;
-		color: $main-titleColor;
-		margin: 0;
-	}
 	.projectCard__description {
-		// background: $main-blurColor;
-		// box-shadow: 0px 2px 8px 0 rgba(0, 0, 7, 0.534);
-		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		flex: 1;
-		// padding: 20px;
+		h1 {
+			text-align: center;
+			color: $main-titleColor;
+			font-size: $cardTitle-large-screen;
+			margin: 0;
+		}
 		p {
-			font-size: 15px;
+			font-size: $cardBody-large-screen;
 			margin: 10px 0;
 		}
 		h3 {
@@ -65,6 +67,7 @@
 			text-align: center;
 			letter-spacing: 1px;
 			margin: 0;
+			font-size: $cardTools-large-screen;
 		}
 		.tools {
 			display: flex;
@@ -73,10 +76,10 @@
 			margin: 20px 0;
 		}
 		.icon {
-			width: 90px;
-			height: 90px;
+			width: $cardIcon-large-screen;
+			height: $cardIcon-large-screen;
 			background-color: rgba(0, 0, 0, 0.685);
-			border-radius: 10px;
+			border-radius: $border-radius;
 			padding: 15px;
 		}
 		img {
@@ -94,7 +97,7 @@
 			text-align: center;
 			color: white;
 			padding: 7px 25px;
-			font-size: 18px;
+			font-size: $cardButton-large-screen;
 			font-family: $main-font;
 			font-style: italic;
 			border-radius: 30px;
@@ -106,5 +109,68 @@
 				background-color: rgb(255, 255, 255);
 			}
 		}
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+	.projectCard__imgContainer {
+		height: $cardImg-height-large !important;
+	}
+}
+@media only screen and (max-width: 1280px) {
+	.work {
+		height: auto;
+	}
+	.work__header {
+		min-height: 85px;
+	}
+	.work__grid {
+		.work__item:nth-child(2) {
+			padding-right: 0;
+		}
+		.work__item:nth-child(3) {
+			padding-left: 0;
+			padding-top: $work-grid-padding;
+		}
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.work__header {
+		h1 {
+			font-size: $h1-small-screen !important;
+		}
+	}
+	.work__grid {
+		.work__item:nth-child(1) {
+			padding-right: 0;
+		}
+		.work__item:nth-child(2) {
+			padding-left: 0;
+			padding-top: $work-grid-padding;
+		}
+	}
+	.projectCard__description {
+		h1 {
+			font-size: $cardTitle-small-screen !important;
+		}
+		p {
+			font-size: $cardBody-small-screen !important;
+		}
+		h3 {
+			font-size: $cardTools-small-screen !important;
+		}
+		.icon {
+			width: $cardIcon-small-screen !important;
+			height: $cardIcon-small-screen !important;
+		}
+	}
+	.buttons {
+		a {
+			font-size: $cardButton-small-screen !important;
+		}
+	}
+	.projectCard__imgContainer {
+		height: $cardImg-height-small !important;
 	}
 }

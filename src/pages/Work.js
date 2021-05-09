@@ -15,12 +15,10 @@ const Work = () => {
 	window.scrollTo(0, 0);
 	return (
 		<div className="work">
-			<Grid container justify="center" spacing={2} className="work__grid">
-				<Grid item xs={12} className="work__item">
-					<div className="work__header">
-						<h1>Check out some of my projects</h1>
-					</div>
-				</Grid>
+			<div className="work__header">
+				<h1>My Projects</h1>
+			</div>
+			<Grid container justify="center" className="work__grid">
 				<Grid item xs={12} md={6} lg={4} className="work__item">
 					<ProjectCard
 						image={TwitterAccount}

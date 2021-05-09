@@ -17,55 +17,41 @@ const Project = () => {
 			<Grid
 				container
 				direction={matches && 'column-reverse'}
-				className="project__highlights"
+				className="project__grid"
 			>
-				<Grid item xs={12} md={8}>
-					<div className="highlights__description">
-						<h2>{data[project].highlightsIntro}</h2>
-						<p style={{ textDecoration: 'underline' }}>
-							Highlights and goals achieved:
-						</p>
-						<ul>
-							{data[project].highlightsList.map((item, i) => (
-								<li key={i}>{item}</li>
-							))}
-						</ul>
-					</div>
+				<Grid item xs={12} md={8} className="project__gridItem">
+					<h2>{data[project].highlightsIntro}</h2>
+					<p style={{ textDecoration: 'underline' }}>
+						Highlights and goals achieved:
+					</p>
+					<ul>
+						{data[project].highlightsList.map((item, i) => (
+							<li key={i}>{item}</li>
+						))}
+					</ul>
 				</Grid>
-				<Grid
-					item
-					xs={12}
-					md={4}
-					style={{
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-						padding: '15px',
-					}}
-				>
-					<div className="highlights__imgContainer">
-						<img src={data[project].image} alt="" />
-					</div>
-				</Grid>
-			</Grid>
-			<Grid container className="project__improvements">
-				<Grid item xs={12} md={4}>
-					<div className="improvements__imgContainer">
+				<Grid item xs={12} md={4} className="project__gridItem">
+					<div className="project__imgContainer">
 						<p>Image placed here</p>
 					</div>
 				</Grid>
-				<Grid item xs={12} md={8}>
-					<div className="improvements__description">
-						<h2>{data[project].improvementsIntro}</h2>
-						<p style={{ textDecoration: 'underline' }}>
-							Notes for Improvements:{' '}
-						</p>
-						<ul>
-							{data[project].improvementsList.map((item, i) => (
-								<li key={i}>{item}</li>
-							))}
-						</ul>
+			</Grid>
+			<Grid container className="project__grid">
+				<Grid item xs={12} md={4} className="project__gridItem">
+					<div className="project__imgContainer">
+						<p>Image placed here</p>
 					</div>
+				</Grid>
+				<Grid item xs={12} md={8} className="project__gridItem">
+					<h2>{data[project].improvementsIntro}</h2>
+					<p style={{ textDecoration: 'underline' }}>
+						Notes for Improvements:{' '}
+					</p>
+					<ul>
+						{data[project].improvementsList.map((item, i) => (
+							<li key={i}>{item}</li>
+						))}
+					</ul>
 				</Grid>
 			</Grid>
 			<div className="project__link">

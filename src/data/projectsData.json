@@ -7,7 +7,6 @@
 			"Successfully implemented backend verification and authorization middleware using JWT",
 			"Sensitive routes are protected and will cause users to be redirected",
 			"Users can search other users, and interact through messages, posts, comments",
-			"Users can update profile information and the whole app will update accordingly",
 			"Persisted state of logged in user after page refresh with Redux-Persist "
 		],
 		"improvementsIntro": "Even though the app can fully function, there are still some improvements I have in mind that will improve overall user experience with the next major update",
