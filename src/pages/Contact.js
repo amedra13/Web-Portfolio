@@ -3,6 +3,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import { CSSTransition } from 'react-transition-group';
 
 const Contact = () => {
+	window.scrollTo(0, 0);
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [subject, setSubject] = useState('');
@@ -20,9 +21,8 @@ const Contact = () => {
 
 	return (
 		<div className="contact">
-			{window.scrollTo(0, 0)}
 			<div className="contact__header">
-				<h1>Lets make something special together</h1>
+				<h1>Lets work together</h1>
 			</div>
 			<div className="contact__formContainer">
 				<div className="formHeader">

@@ -1,43 +1,37 @@
 .contact {
-	@include content-styling;
-	background: $main-blurColor;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	border-radius: 10px;
-	font-family: $main-font;
+	@include glass-styling;
+	@include right-side-structure;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 10% 90%;
-	padding: 15px;
+	grid-template-rows: 10% 1fr;
+	grid-gap: $work-grid-padding;
 	.contact__header {
-		@include content-glass-style;
-		margin-bottom: 10px;
-		padding-left: 3%;
-		text-transform: capitalize;
-		text-align: center;
+		@include glass-styling;
+		@include page-header-structure;
+		height: 100%;
 	}
 	.contact__formContainer {
-		@include content-glass-style;
+		@include glass-styling;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		.formHeader {
-			width: 50%;
+			width: $form-width-medium;
 			h1 {
-				font-size: 70px;
+				font-size: $formTitle-medium-screen;
 				margin: 0;
 				color: $main-titleColor;
 			}
 			p {
-				font-size: 20px;
+				font-size: $formBody-medium-screen;
 			}
 		}
 		form {
-			border-radius: 10px;
+			border-radius: $border-radius;
 			height: 40%;
-			width: 50%;
+			width: $form-width-medium;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr 3fr 1fr;
@@ -49,9 +43,10 @@
 			input,
 			textarea {
 				border: none;
-				border-radius: 10px;
+				border-radius: $border-radius;
 				padding-left: 15px;
 				font-family: $main-font;
+				font-size: $formBody-medium-screen;
 			}
 			input:focus,
 			textarea:focus {
@@ -69,7 +64,7 @@
 			button {
 				border: 2px solid rgba(0, 238, 255, 0.432);
 				border-radius: 10px;
-				font-size: 18px;
+				font-size: $formBody-medium-screen;
 				font-family: $main-font;
 				background-color: rgba(0, 238, 255, 0.432);
 				color: white;
@@ -88,13 +83,13 @@
 	background-color: $main-blurColor;
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
 	height: 40%;
-	width: 50%;
+	width: $form-width-medium;
 	border-radius: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	p {
-		font-size: 50px;
+		font-size: $formTitle-medium-screen;
 		margin: 0;
 		margin-right: 20px;
 		color: $main-titleColor;
@@ -136,4 +131,71 @@
 	transform: scale(0.3);
 	opacity: 0;
 	transition: opacity 400ms, transform 500ms;
+}
+
+@media only screen and (min-width: 1900px) {
+	.formHeader {
+		width: $form-width-large !important;
+		max-width: $form-width-max;
+		h1 {
+			font-size: $formTitle-large-screen !important;
+		}
+		p {
+			font-size: $formBody-large-screen !important;
+		}
+	}
+	form {
+		width: $form-width-large !important;
+		max-width: $form-width-max;
+		input,
+		textarea {
+			font-size: $formBody-large-screen !important;
+		}
+		button {
+			font-size: $formBody-large-screen !important;
+		}
+	}
+	.spinner {
+		width: $form-width-large !important;
+		max-width: $form-width-max;
+		p {
+			font-size: $formTitle-large-screen;
+		}
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.contact {
+		grid-template-rows: 100px 1fr !important;
+	}
+	.contact__header {
+		h1 {
+			font-size: $h1-small-screen !important;
+		}
+	}
+	.formHeader {
+		width: $form-width-small !important;
+		h1 {
+			font-size: $formTitle-small-screen !important;
+		}
+		p {
+			font-size: $formBody-small-screen !important;
+		}
+	}
+	form {
+		width: $form-width-small !important;
+		input,
+		textarea {
+			font-size: $formBody-small-screen !important;
+		}
+		button {
+			font-size: $formBody-small-screen !important;
+		}
+	}
+	.spinner {
+		width: $form-width-small !important;
+		p {
+			font-size: $formTitle-small-screen;
+		}
+	}
 }
