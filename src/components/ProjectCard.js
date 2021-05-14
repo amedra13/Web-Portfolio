@@ -13,7 +13,9 @@ const ProjectCard = ({
 	return (
 		<div className="projectCard" style={{ animationDelay: `${delay}` }}>
 			<div className="projectCard__imgContainer">
-				<img src={image} alt="" />
+				<Link to={projectLink}>
+					<img src={image} alt="" />
+				</Link>
 			</div>
 			<div className="projectCard__description">
 				<h1>{title}</h1>
