@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/projectsData.json';
+import Popper from '@material-ui/core/Popper';
+import Fade from '@material-ui/core/Fade';
 import Grid from '@material-ui/core/Grid';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const Project = () => {
-	window.scrollTo(0, 0);
 	let { project } = useParams();
+	const [anchorEl, setAnchorEl] = useState(null);
 	const matches = useMediaQuery('(max-width:960px)');
+
+	const handleClick = (event) => {
+		event.preventDefault();
+		setAnchorEl(anchorEl ? null : event.currentTarget);
+	};
+
+	const open = Boolean(anchorEl);
 
 	return (
 		<div className="project">
@@ -55,6 +64,28 @@ const Project = () => {
 				</Grid>
 			</Grid>
 			<div className="project__link">
+				{project !== 'nobu' && (
+					<>
+						{' '}
+						<button type="button" onClick={handleClick}>
+							Demo Credentials
+						</button>
+						<Popper open={open} anchorEl={anchorEl} transition>
+							{({ TransitionProps }) => (
+								<Fade {...TransitionProps} timeout={350}>
+									<div className="project__popper">
+										<h5>
+											<span>Username</span> : medranodemo@gmail.com
+										</h5>
+										<h5>
+											<span>Password</span> : medranodemo
+										</h5>
+									</div>
+								</Fade>
+							)}
+						</Popper>
+					</>
+				)}
 				<a href={data[project].link} target="_blank" rel="noreferrer">
 					Link to Project{' '}
 				</a>
