@@ -24,7 +24,7 @@ const Sidebar = ({ shrink }) => {
 	return (
 		<div className={`sidebar ${shrink && 'hide'} ${showSidebar && 'slideIn'}`}>
 			<div className="sidebar__container">
-				<Link to="/" className="imgLink">
+				<Link to="/" className="imgLink" onClick={closeSidebar}>
 					<img src={Logo} alt="amsportscards" />
 				</Link>
 
@@ -33,6 +33,7 @@ const Sidebar = ({ shrink }) => {
 						component={NavLink}
 						to="/about"
 						activeClassName="selected"
+						disableRipple
 						onClick={closeSidebar}
 					>
 						<AccountCircleIcon />
@@ -43,6 +44,7 @@ const Sidebar = ({ shrink }) => {
 						component={NavLink}
 						to="/skills"
 						activeClassName="selected"
+						disableRipple
 						onClick={closeSidebar}
 					>
 						<KeyboardIcon />
@@ -53,6 +55,7 @@ const Sidebar = ({ shrink }) => {
 						component={NavLink}
 						to="/work"
 						activeClassName="selected"
+						disableRipple
 						onClick={closeSidebar}
 					>
 						<WorkIcon />
@@ -63,6 +66,7 @@ const Sidebar = ({ shrink }) => {
 						component={NavLink}
 						to="/contact"
 						activeClassName="selected"
+						disableRipple
 						onClick={closeSidebar}
 					>
 						<AlternateEmailIcon />
@@ -85,7 +89,7 @@ const Sidebar = ({ shrink }) => {
 					</a>
 				</div>
 			</div>
-			<BurgerMenu clickFunction={toggleSidebar} />
+			<BurgerMenu clickFunction={toggleSidebar} showSidebar={showSidebar} />
 		</div>
 	);
 };

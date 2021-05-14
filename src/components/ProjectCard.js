@@ -30,7 +30,7 @@ const ProjectCard = ({
 				</div>
 
 				<div className="buttons">
-					<Link to={projectLink}>Description</Link>
+					<Link to={projectLink}>Check it out!</Link>
 				</div>
 			</div>
 		</div>

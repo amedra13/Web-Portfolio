@@ -15,10 +15,10 @@ const useStyles = makeStyles({
 	},
 });
 
-const BurgerMenu = ({ clickFunction }) => {
+const BurgerMenu = ({ clickFunction, showSidebar }) => {
 	const classes = useStyles();
 	return (
-		<div className="burgerMenu">
+		<div className={`burgerMenu ${showSidebar && 'flip'}`}>
 			<IconButton className={classes.button} onClick={() => clickFunction()}>
 				<KeyboardArrowRightIcon className={classes.icon} />
 			</IconButton>
