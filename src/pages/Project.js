@@ -14,22 +14,38 @@ const Project = () => {
 		event.preventDefault();
 		setAnchorEl(anchorEl ? null : event.currentTarget);
 	};
-	const handleClose = () => {
-		setAnchorEl(null);
-	};
 
 	const open = Boolean(anchorEl);
 
-	return (
-		<div className="project">
-			<div className="project__header">
-				<h1>{data[project].name}</h1>
-			</div>
-			<Grid
-				container
-				// direction={matches && 'column-reverse'}
-				className="project__grid"
-			>
+	let gridContent = (
+		<>
+			<Grid item xs={12} md={8} className="project__gridItem">
+				<h2>{data[project].highlightsIntro}</h2>
+				<p style={{ textDecoration: 'underline' }}>
+					Highlights and goals achieved:
+				</p>
+				<ul>
+					{data[project].highlightsList.map((item, i) => (
+						<li key={i}>{item}</li>
+					))}
+				</ul>
+			</Grid>
+			<Grid item xs={12} md={4} className="project__gridItem">
+				<div className="project__imgContainer">
+					<img src={data[project].image1} alt="" />
+				</div>
+			</Grid>
+		</>
+	);
+
+	if (matches) {
+		gridContent = (
+			<>
+				<Grid item xs={12} md={4} className="project__gridItem">
+					<div className="project__imgContainer">
+						<img src={data[project].image1} alt="" />
+					</div>
+				</Grid>
 				<Grid item xs={12} md={8} className="project__gridItem">
 					<h2>{data[project].highlightsIntro}</h2>
 					<p style={{ textDecoration: 'underline' }}>
@@ -41,11 +57,17 @@ const Project = () => {
 						))}
 					</ul>
 				</Grid>
-				<Grid item xs={12} md={4} className="project__gridItem">
-					<div className="project__imgContainer">
-						<img src={data[project].image1} alt="" />
-					</div>
-				</Grid>
+			</>
+		);
+	}
+
+	return (
+		<div className="project">
+			<div className="project__header">
+				<h1>{data[project].name}</h1>
+			</div>
+			<Grid container className="project__grid">
+				{gridContent}
 			</Grid>
 			<Grid container className="project__grid">
 				<Grid item xs={12} md={4} className="project__gridItem">
@@ -75,7 +97,9 @@ const Project = () => {
 						<Popover
 							open={open}
 							anchorEl={anchorEl}
-							onClose={handleClose}
+							onClose={() => {
+								setAnchorEl(null);
+							}}
 							anchorOrigin={{
 								vertical: 'top',
 								horizontal: 'center',
