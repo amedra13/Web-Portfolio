@@ -34,7 +34,8 @@
 			"With the implementation of Emailjs in order to confirm the reservation and email the user a copy of their confirmation"
 		],
 		"link": "https://nobu-clone.web.app/",
-		"image": "/static/media/NobuGif.159f6c7d.gif"
+		"image1": "/static/media/NobuGif.159f6c7d.gif",
+		"image2": "/static/media/NobuBook.3b9e6e30.png"
 	},
 	"spotify": {
 		"name": "Spotify Clone",
@@ -51,6 +52,7 @@
 			"Implement a User profile page that will show a great represenation of user account and interest to other users "
 		],
 		"link": "https://spotify-clone-1867c.web.app/",
-		"image": "/static/media/twitterAccount.9087027b.jpg"
+		"image1": "/static/media/Spotify.4b021ad3.gif",
+		"image2": "/static/media/SpotifyPlaylist.cec7766a.png"
 	}
 }

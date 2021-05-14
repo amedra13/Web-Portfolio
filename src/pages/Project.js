@@ -4,16 +4,11 @@ import data from '../data/projectsData.json';
 import Popover from '@material-ui/core/Popover';
 import Grid from '@material-ui/core/Grid';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import NobuGif from '../videos/NobuGif.gif';
 
 const Project = () => {
 	let { project } = useParams();
 	const [anchorEl, setAnchorEl] = useState(null);
 	const matches = useMediaQuery('(max-width:960px)');
-
-	const printImg = () => {
-		console.log(NobuGif);
-	};
 
 	const handleClick = (event) => {
 		event.preventDefault();
@@ -48,14 +43,14 @@ const Project = () => {
 				</Grid>
 				<Grid item xs={12} md={4} className="project__gridItem">
 					<div className="project__imgContainer">
-						<img src={data[project].image} alt="" onClick={printImg} />
+						<img src={data[project].image1} alt="" />
 					</div>
 				</Grid>
 			</Grid>
 			<Grid container className="project__grid">
 				<Grid item xs={12} md={4} className="project__gridItem">
 					<div className="project__imgContainer">
-						<p>Image placed here</p>
+						<img src={data[project].image2} alt="" />
 					</div>
 				</Grid>
 				<Grid item xs={12} md={8} className="project__gridItem">
