@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/projectsData.json';
-import Popper from '@material-ui/core/Popper';
-import Fade from '@material-ui/core/Fade';
+import Popover from '@material-ui/core/Popover';
 import Grid from '@material-ui/core/Grid';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
@@ -14,6 +13,9 @@ const Project = () => {
 	const handleClick = (event) => {
 		event.preventDefault();
 		setAnchorEl(anchorEl ? null : event.currentTarget);
+	};
+	const handleClose = () => {
+		setAnchorEl(null);
 	};
 
 	const open = Boolean(anchorEl);
@@ -70,20 +72,28 @@ const Project = () => {
 						<button type="button" onClick={handleClick}>
 							Demo Credentials
 						</button>
-						<Popper open={open} anchorEl={anchorEl} transition>
-							{({ TransitionProps }) => (
-								<Fade {...TransitionProps} timeout={350}>
-									<div className="project__popper">
-										<h5>
-											<span>Username</span> : medranodemo@gmail.com
-										</h5>
-										<h5>
-											<span>Password</span> : medranodemo
-										</h5>
-									</div>
-								</Fade>
-							)}
-						</Popper>
+						<Popover
+							open={open}
+							anchorEl={anchorEl}
+							onClose={handleClose}
+							anchorOrigin={{
+								vertical: 'top',
+								horizontal: 'center',
+							}}
+							transformOrigin={{
+								vertical: 'bottom',
+								horizontal: 'center',
+							}}
+						>
+							<div className="project__popper">
+								<h5>
+									<span>Username</span> : medranodemo@gmail.com
+								</h5>
+								<h5>
+									<span>Password</span> : medranodemo
+								</h5>
+							</div>
+						</Popover>
 					</>
 				)}
 				<a href={data[project].link} target="_blank" rel="noreferrer">
