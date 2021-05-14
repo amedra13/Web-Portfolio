@@ -6,20 +6,24 @@
 	@include content-glass-style;
 	backdrop-filter: blur(6px);
 	-webkit-backdrop-filter: blur(6px);
-	border: 1px solid rgba(255, 255, 255, 0.18);
+	// border: 1px solid rgba(255, 255, 255, 0.18);
 	margin-right: 10px;
 	border-radius: 0;
+	transition: transform 300ms;
 }
 .hide {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	transform: translateX(-100%);
-	// background: none;
-	// backdrop-filter: none;
-	// position: fixed;
-	// right: 0;
 	z-index: 10;
-	// width: 80px;
+	background-color: #02052e;
+	width: 200px;
+	.burgerMenu {
+		display: flex;
+	}
+}
+.slideIn {
+	transform: translateX(0);
 }
 .sidebar__container {
 	height: 100%;
@@ -46,6 +50,9 @@
 		height: 35vh;
 		display: flex;
 		flex-direction: column;
+		button {
+			border: 2px solid orange;
+		}
 
 		a {
 			position: relative;
@@ -55,7 +62,7 @@
 			color: white;
 			display: flex;
 			align-items: center;
-			padding-left: 3.5vw;
+			// padding-left: 3.5vw;
 			transition: all 200ms;
 			font-family: $main-font;
 			&:hover {
@@ -113,8 +120,47 @@
 				color: $highlight-icon;
 			}
 			svg {
-				width: $sidebarIcon-size;
-				height: $sidebarIcon-size;
+				width: $sidebarIcon-large;
+				height: $sidebarIcon-large;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.sidebar__links {
+		// a {
+		// 	padding-left: 4vw !important;
+		// }
+		p,
+		svg {
+			font-size: $bodyText-small-screen !important;
+		}
+	}
+	.sidebar__iconLinks {
+		a {
+			svg {
+				width: $sidebarIcon-small !important;
+				height: $sidebarIcon-small !important;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 600px) {
+	.sidebar__links {
+		// a {
+		// 	padding-left: 5vw !important;
+		// }
+		p,
+		svg {
+			font-size: $bodyText-Xsmall-screen !important;
+		}
+	}
+	.sidebar__iconLinks {
+		a {
+			svg {
+				width: $sidebarIcon-Xsmall !important;
+				height: $sidebarIcon-Xsmall !important;
 			}
 		}
 	}
