@@ -50,19 +50,12 @@
 		height: 35vh;
 		display: flex;
 		flex-direction: column;
-		button {
-			border: 2px solid orange;
-		}
-
 		a {
 			position: relative;
 			border-top: 1px solid rgba(255, 255, 255, 0.18);
 			flex: 1;
 			text-decoration: none;
 			color: white;
-			display: flex;
-			align-items: center;
-			// padding-left: 3.5vw;
 			transition: all 200ms;
 			font-family: $main-font;
 			&:hover {
@@ -75,6 +68,10 @@
 					height: 100%;
 					transition: height 300ms;
 				}
+			}
+			.MuiButton-label {
+				justify-content: flex-start;
+				padding-left: 2.2vw;
 			}
 			p {
 				margin: 10px;
@@ -129,38 +126,19 @@
 
 @media only screen and (max-width: 960px) {
 	.sidebar__links {
-		// a {
-		// 	padding-left: 4vw !important;
-		// }
+		.MuiButton-label {
+			padding-left: 30px !important;
+		}
 		p,
 		svg {
-			font-size: $bodyText-small-screen !important;
+			font-size: 18px !important;
 		}
 	}
 	.sidebar__iconLinks {
 		a {
 			svg {
-				width: $sidebarIcon-small !important;
-				height: $sidebarIcon-small !important;
-			}
-		}
-	}
-}
-@media only screen and (max-width: 600px) {
-	.sidebar__links {
-		// a {
-		// 	padding-left: 5vw !important;
-		// }
-		p,
-		svg {
-			font-size: $bodyText-Xsmall-screen !important;
-		}
-	}
-	.sidebar__iconLinks {
-		a {
-			svg {
-				width: $sidebarIcon-Xsmall !important;
-				height: $sidebarIcon-Xsmall !important;
+				width: 30px !important;
+				height: 30px !important;
 			}
 		}
 	}

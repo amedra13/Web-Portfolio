@@ -39,21 +39,36 @@ const Sidebar = ({ shrink }) => {
 						<p>About</p>
 						<span className="animated-bar"></span>
 					</Button>
-					<NavLink to="/skills" activeClassName="selected">
+					<Button
+						component={NavLink}
+						to="/skills"
+						activeClassName="selected"
+						onClick={closeSidebar}
+					>
 						<KeyboardIcon />
 						<p>Skills</p>
 						<span className="animated-bar"></span>
-					</NavLink>
-					<NavLink to="/work" activeClassName="selected">
+					</Button>
+					<Button
+						component={NavLink}
+						to="/work"
+						activeClassName="selected"
+						onClick={closeSidebar}
+					>
 						<WorkIcon />
 						<p>Work</p>
 						<span className="animated-bar"></span>
-					</NavLink>
-					<NavLink to="/contact" activeClassName="selected">
+					</Button>
+					<Button
+						component={NavLink}
+						to="/contact"
+						activeClassName="selected"
+						onClick={closeSidebar}
+					>
 						<AlternateEmailIcon />
 						<p>Contact</p>
 						<span className="animated-bar"></span>
-					</NavLink>
+					</Button>
 				</div>
 				<div className="sidebar__iconLinks">
 					<a href="/">
