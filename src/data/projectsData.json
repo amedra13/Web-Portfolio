@@ -17,7 +17,7 @@
 			"Currently the messaging system requires an state refresh to send and receive new messages. Will implment Socket IO in the next update in order to ensure real-time data transfer and notifications"
 		],
 		"link": "/about",
-		"image": "/static/media/twitterGif.f82e5141.gif"
+		"image": "/static/media/NobuGif.159f6c7d.gif"
 	},
 	"nobu": {
 		"name": "Nobu Website",
@@ -34,7 +34,7 @@
 			"With the implementation of Emailjs in order to confirm the reservation and email the user a copy of their confirmation"
 		],
 		"link": "https://nobu-clone.web.app/",
-		"image": "/static/media/twitterAccount.9087027b.jpg"
+		"image": "/static/media/NobuGif.159f6c7d.gif"
 	},
 	"spotify": {
 		"name": "Spotify Clone",
