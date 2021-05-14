@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import Logo from '../images/logo.png';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import WorkIcon from '@material-ui/icons/Work';
@@ -48,10 +47,6 @@ const Sidebar = ({ shrink }) => {
 					<a href="/">
 						{' '}
 						<InstagramIcon />
-					</a>
-					<a href="/">
-						{' '}
-						<TwitterIcon />
 					</a>
 					<a href="/">
 						{' '}
