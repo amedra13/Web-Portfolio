@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { CSSTransition } from 'react-transition-group';
+import emailjs from 'emailjs-com';
+emailjs.init('user_v0mV4jJTJD5COxD4Kbxkb');
 
 const Contact = () => {
 	window.scrollTo(0, 0);
@@ -10,13 +12,29 @@ const Contact = () => {
 	const [message, setMessage] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
 	const [showForm, setShowForm] = useState(true);
+	const [err, setErr] = useState(false);
 
-	const sendMessage = () => {
+	const sendMessage = async (e) => {
+		e.preventDefault();
+		if (name === '' || email === '' || subject === '' || message === '') {
+			setErr(true);
+			return;
+		}
 		setShowForm(false);
 		setIsLoading(true);
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 3000);
+		const emailData = {
+			from_name: name,
+			from_email: email,
+			subject: subject,
+			message: message,
+		};
+		await emailjs.send('service_84icjgn', 'template_l5ksq0f', emailData);
+		setName('');
+		setEmail('');
+		setSubject('');
+		setMessage('');
+		setErr(false);
+		setIsLoading(false);
 	};
 
 	return (
@@ -33,6 +51,11 @@ const Contact = () => {
 						and see if we can work on something great together or if you have
 						other request or question, don’t hesitate to use the form.
 					</p>
+					{err && (
+						<p style={{ color: 'red' }}>
+							- Empty Field. Please fill out form completely -
+						</p>
+					)}
 				</div>
 				<CSSTransition
 					in={isLoading}
@@ -44,7 +67,7 @@ const Contact = () => {
 					<LoadingSpinner />
 				</CSSTransition>
 				{showForm && (
-					<form className="contact__form">
+					<form onSubmit={sendMessage} className="contact__form">
 						<input
 							id="name"
 							type="text"
@@ -73,7 +96,7 @@ const Contact = () => {
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
 						/>
-						<button onClick={() => sendMessage()}>Send Message</button>
+						<button type="submit">Send Message</button>
 					</form>
 				)}
 			</div>
