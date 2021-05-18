@@ -37,10 +37,10 @@
 		justify-content: center;
 		margin-top: 10%;
 		img {
-			min-width: 80px;
-			min-height: 80px;
-			max-height: 175px;
-			max-width: 175px;
+			width: 10vw;
+			height: 10vw;
+			max-height: 250px;
+			max-width: 250px;
 		}
 	}
 
@@ -125,6 +125,12 @@
 }
 
 @media only screen and (max-width: 960px) {
+	.imgLink {
+		img {
+			width: 100px !important;
+			height: 100px !important;
+		}
+	}
 	.sidebar__links {
 		.MuiButton-label {
 			padding-left: 30px !important;
