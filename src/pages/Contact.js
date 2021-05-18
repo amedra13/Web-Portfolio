@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { CSSTransition } from 'react-transition-group';
 import emailjs from 'emailjs-com';
-emailjs.init('user_v0mV4jJTJD5COxD4Kbxkb');
+import { emailId, emailServiceId, emailTemplate } from '../Email';
+emailjs.init(emailId);
 
 const Contact = () => {
 	window.scrollTo(0, 0);
@@ -28,7 +29,7 @@ const Contact = () => {
 			subject: subject,
 			message: message,
 		};
-		await emailjs.send('service_84icjgn', 'template_l5ksq0f', emailData);
+		await emailjs.send(emailServiceId, emailTemplate, emailData);
 		setName('');
 		setEmail('');
 		setSubject('');
