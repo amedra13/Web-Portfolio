@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 html {
-	background-color: rgb(1, 12, 39);
+	background-color: $main-bgColor;
 }
 
 .app {
@@ -21,6 +21,9 @@ html {
 	display: none;
 }
 .app__rightSide {
+	// background-color: $main-blurColor;
+	// backdrop-filter: blur(6px);
+	// -webkit-backdrop-filter: blur(6px);
 	box-sizing: border-box;
 	position: relative;
 	height: 100%;

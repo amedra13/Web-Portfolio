@@ -1,5 +1,5 @@
 .project {
-	@include glass-styling;
+	@include right-side-style;
 	@include right-side-structure;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -15,7 +15,6 @@
 	}
 }
 .project__grid {
-	@include glass-styling;
 	padding: $work-grid-padding;
 	.project__gridItem {
 		padding: 0 20px;

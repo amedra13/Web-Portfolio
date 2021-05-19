@@ -1,5 +1,5 @@
 .about {
-	@include glass-styling;
+	@include right-side-style;
 	@include right-side-structure;
 	border-radius: 0;
 }
@@ -32,7 +32,6 @@
 	}
 }
 .item__container {
-	@include glass-styling;
 	height: 100%;
 	padding: 30px 3vw;
 }

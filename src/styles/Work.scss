@@ -1,5 +1,5 @@
 .work {
-	@include glass-styling;
+	@include right-side-style;
 	@include right-side-structure;
 	border-radius: 0;
 	.work__header {
@@ -23,7 +23,6 @@
 }
 
 .projectCard {
-	@include content-glass-style;
 	animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s
 		both;
 	height: 100%;
