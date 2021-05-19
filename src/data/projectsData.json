@@ -16,7 +16,7 @@
 			"Currently, profile update does not support change of profiles pictures",
 			"Currently the messaging system requires an state refresh to send and receive new messages. Will implment Socket IO in the next update in order to ensure real-time data transfer and notifications"
 		],
-		"link": "/about",
+		"link": "https://twitter-clone-77.herokuapp.com/",
 		"image2": "/videos/TwitterMessage.gif",
 		"image1": "/images/LoiProfile.png"
 	},

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Logo from '../images/logo1.PNG';
+import Logo from '../images/logo.png';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -75,15 +75,27 @@ const Sidebar = ({ shrink }) => {
 					</Button>
 				</div>
 				<div className="sidebar__iconLinks">
-					<a href="/">
+					<a
+						href="https://www.linkedin.com/in/andres-medrano-19ba91132/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						{' '}
 						<LinkedInIcon />
 					</a>
-					<a href="/">
+					<a
+						href="https://www.instagram.com/am_sportscards5"
+						target="_blank"
+						rel="noreferrer"
+					>
 						{' '}
 						<InstagramIcon />
 					</a>
-					<a href="/">
+					<a
+						href="https://github.com/amedra13"
+						target="_blank"
+						rel="noreferrer"
+					>
 						{' '}
 						<GitHubIcon />
 					</a>
