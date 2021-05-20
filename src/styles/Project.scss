@@ -12,6 +12,7 @@
 }
 .project__grid {
 	padding: $work-grid-padding;
+
 	.project__gridItem {
 		padding: 0 20px;
 		h2 {
@@ -25,6 +26,9 @@
 			font-size: $projectList-medium !important;
 		}
 	}
+}
+.border {
+	border-bottom: 1px solid $main-titleColor;
 }
 
 .project__imgContainer {

@@ -4,20 +4,14 @@
 	border-radius: 0;
 	.work__header {
 		@include page-header-structure;
+		border-bottom: none;
 	}
 }
 
 .work__grid {
 	height: 90%;
-	padding-top: $work-grid-padding;
-	.work__item:nth-child(1) {
-		padding-right: calc(#{$work-grid-padding/ 2});
-	}
-	.work__item:nth-child(2) {
-		padding: 0 calc(#{$work-grid-padding/ 2});
-	}
-	.work__item:nth-child(3) {
-		padding-left: calc(#{$work-grid-padding/ 2});
+	.work__item {
+		border-top: 2px solid $main-titleColor;
 	}
 }
 

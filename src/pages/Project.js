@@ -66,7 +66,7 @@ const Project = () => {
 			<div className="project__header">
 				<h1>{data[project].name}</h1>
 			</div>
-			<Grid container className="project__grid">
+			<Grid container className="project__grid border">
 				{gridContent}
 			</Grid>
 			<Grid container className="project__grid">
