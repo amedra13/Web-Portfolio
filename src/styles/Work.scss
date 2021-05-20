@@ -3,7 +3,6 @@
 	@include right-side-structure;
 	border-radius: 0;
 	.work__header {
-		@include glass-styling;
 		@include page-header-structure;
 	}
 }

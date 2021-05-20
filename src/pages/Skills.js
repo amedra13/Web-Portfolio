@@ -41,7 +41,6 @@ const Skills = () => {
 					</div>
 				</Grid>
 				<Grid item xs={12} md={6} className="skills__item">
-					{/* <div className="skills__icons"> */}
 					<div className="skills__container skills__icons">
 						<div className="icon__container" style={{ animationDelay: '2.4s' }}>
 							<img src={JavascriptLogo} alt="" />

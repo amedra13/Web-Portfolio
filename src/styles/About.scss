@@ -4,7 +4,6 @@
 	border-radius: 0;
 }
 .about__header {
-	@include glass-styling;
 	@include page-header-structure;
 }
 .about__grid {

@@ -4,7 +4,6 @@
 	border-radius: 0;
 }
 .skills__header {
-	@include glass-styling;
 	@include page-header-structure;
 }
 .skills__grid {
@@ -34,13 +33,11 @@
 	height: 100%;
 	padding: 30px 3vw;
 	.icon__container {
-		// @include content-glass-style;
 		background: $icon-bgColor;
 		width: 8vw;
 		height: 8vw;
 		margin: 10px;
 		padding: 30px;
-		// border: 2px solid lightblue;
 		border-radius: $border-radius;
 		animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
 	}

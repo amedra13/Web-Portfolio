@@ -7,7 +7,6 @@
 	grid-template-rows: 10% 1fr;
 	grid-gap: $work-grid-padding;
 	.contact__header {
-		@include glass-styling;
 		@include page-header-structure;
 		height: 100%;
 	}
@@ -115,25 +114,6 @@
 	opacity: 0;
 	transition: opacity 400ms, transform 500ms;
 }
-
-// .formAnimation-enter {
-// 	opacity: 0;
-// 	transform: scale(0.9);
-// }
-// .formAnimation-enter-active {
-// 	opacity: 1;
-// 	transform: scale(1);
-// 	transition: opacity 500ms, transform 500ms;
-// }
-// .formAnimation-exit {
-// 	transform: scale(1);
-// 	opacity: 1;
-// }
-// .formAnimation-exit-active {
-// 	transform: scale(0.3);
-// 	opacity: 0;
-// 	transition: opacity 400ms, transform 500ms;
-// }
 
 @media only screen and (min-width: 1900px) {
 	.formHeader {
