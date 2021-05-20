@@ -35,7 +35,7 @@
 	padding: 30px 3vw;
 	.icon__container {
 		// @include content-glass-style;
-		background: rgba(0, 0, 0, 0.685);
+		background: $icon-bgColor;
 		width: 8vw;
 		height: 8vw;
 		margin: 10px;

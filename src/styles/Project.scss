@@ -91,10 +91,13 @@
 	color: white;
 	border: 7px solid $main-titleColor;
 	background-color: $main-bgColor;
+	font-family: $main-font;
+
 	padding: 10px;
 	height: 100%;
 	span {
 		color: $main-titleColor;
+		font-weight: 600;
 	}
 	h5 {
 		font-size: 1vw;
