@@ -44,15 +44,15 @@
 }
 //<--------------------------------------------------------------->
 @mixin right-side-style {
-	background: $main-blurColor;
+	background: rgba(62, 39, 71, 0.315);
 	// box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
 	// border-radius: $border-radius;
 	color: white;
 	font-family: $main-font;
 }
 @mixin glass-styling {
-	border-radius: $border-radius;
-	background-color: $component-glass-bg;
+	// border-radius: $border-radius;
+	// background-color: $component-glass-bg;
 }
 @mixin page-header-structure {
 	text-transform: capitalize;
@@ -64,7 +64,10 @@
 	h1 {
 		margin: 0;
 		font-size: $h1-large-screen;
+		font-weight: 7000;
+		color: rgb(199, 209, 255);
 	}
+	border-bottom: 2px solid rgb(199, 209, 255);
 }
 @mixin right-side-structure {
 	height: 100%;

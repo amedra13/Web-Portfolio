@@ -7,6 +7,7 @@ $main-bgColor: rgb(1, 12, 39);
 // $main-blurColor: rgba(219, 181, 238, 0.171);
 $main-blurColor: rgba(70, 24, 95, 0.171);
 $main-titleColor: rgb(199, 209, 255);
+// $main-titleColor: rgb(246, 133, 248);
 $main-highlightBlue: rgb(0, 238, 255);
 $glass-lightPink: rgba(232, 160, 233, 0.15);
 $glass-brightPink: rgb(246, 32, 250);
@@ -14,9 +15,17 @@ $highlight-icon: rgb(246, 133, 248);
 $icon-bgColor: rgba(0, 0, 0, 0.685);
 $component-glass-bg: rgba(84, 0, 87, 0.089);
 
+// $bg-color-1: #e45a84;
+$bg-color-1: #ff004c;
+// $bg-color-2: #089bfd;
+$bg-color-2: #089bfd;
+// $bg-color-3: #ffacac;
+$bg-color-3: #431fc7;
+
 // <------------- common varibles -------------------------->
 
-$main-font: 'Russo One', sans-serif;
+$main-font: 'Lexend', sans-serif;
+// $main-font: 'Russo One', sans-serif;
 $border-radius: 10px;
 
 // <----------------- Response heights and widths ---------------------------->
@@ -31,12 +40,12 @@ $bodyText-middle-screen: 2vw;
 $bodyText-small-screen: 2.5vw;
 $bodyText-Xsmall-screen: 4vw;
 
-$h1-large-screen: 2.5vw;
-$h1-small-screen: 5vw;
+$h1-large-screen: 4vw;
+$h1-small-screen: 6.5vw;
 
-$bodyTitle-large-screen: 5.5vw;
+$bodyTitle-large-screen: 4.5vw;
 $bodyTitle-middle-screen: 7vw;
-$bodyTitle-small-screen: 10vw;
+$bodyTitle-small-screen: 8vw;
 
 $icon-large-screen: 7vw;
 $icon-middle-screen: 8vw;
@@ -90,8 +99,8 @@ $form-width-large: 70vw;
 $form-width-medium: 60vw;
 $form-width-small: 80vw;
 
-$formTitle-large-screen: 4.5vw;
-$formTitle-medium-screen: 4vw;
+$formTitle-large-screen: 3.5vw;
+$formTitle-medium-screen: 3.5vw;
 $formTitle-small-screen: 6.5vw;
 
 $formBody-large-screen: 1vw;

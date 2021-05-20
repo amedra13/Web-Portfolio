@@ -27,7 +27,7 @@
 }
 
 .background span:nth-child(0) {
-	background-color: #e45a84;
+	background-color: $bg-color-1;
 	top: 70%;
 	left: 64%;
 	animation-duration: 116s;
@@ -35,7 +35,7 @@
 	transform-origin: 18vw 1vh;
 }
 .background span:nth-child(1) {
-	background-color: #0892fd;
+	background-color: $bg-color-2;
 	top: 81%;
 	left: 30%;
 	animation-duration: 33s;
@@ -43,7 +43,7 @@
 	transform-origin: 13vw -14vh;
 }
 .background span:nth-child(2) {
-	background-color: #e45a84;
+	background-color: $bg-color-1;
 	top: 60%;
 	left: 49%;
 	animation-duration: 90s;
@@ -51,7 +51,7 @@
 	transform-origin: -10vw 10vh;
 }
 .background span:nth-child(3) {
-	background-color: #0892fd;
+	background-color: $bg-color-2;
 	top: 91%;
 	left: 85%;
 	animation-duration: 78s;
@@ -59,7 +59,7 @@
 	transform-origin: -16vw 24vh;
 }
 .background span:nth-child(4) {
-	background-color: #ffacac;
+	background-color: $bg-color-3;
 	top: 48%;
 	left: 96%;
 	animation-duration: 142s;
@@ -67,7 +67,7 @@
 	transform-origin: -9vw -6vh;
 }
 .background span:nth-child(5) {
-	background-color: #e45a84;
+	background-color: $bg-color-1;
 	top: 34%;
 	left: 53%;
 	animation-duration: 57s;
@@ -75,7 +75,7 @@
 	transform-origin: -8vw -9vh;
 }
 .background span:nth-child(6) {
-	background-color: #ffacac;
+	background-color: $bg-color-3;
 	top: 74%;
 	left: 9%;
 	animation-duration: 36s;
@@ -83,7 +83,7 @@
 	transform-origin: -14vw 21vh;
 }
 .background span:nth-child(7) {
-	background-color: #ffacac;
+	background-color: $bg-color-3;
 	top: 17%;
 	left: 30%;
 	animation-duration: 149s;
