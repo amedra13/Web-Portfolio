@@ -95,17 +95,18 @@
 			text-decoration: none;
 			text-align: center;
 			color: white;
-			padding: 7px 25px;
+			padding: 0.4vw 0;
 			font-size: $cardButton-large-screen;
 			font-family: $main-font;
 			font-style: italic;
+			font-weight: 600;
+			background-color: $glass-brightPink;
+			border: 2px solid $glass-brightPink;
 			border-radius: 30px;
-			background-color: rgba(0, 238, 255, 0.432);
-			border: 2px solid rgba(0, 238, 255, 0.432);
 			transition: all 100ms;
 			&:hover {
-				color: rgb(0, 238, 255);
-				background-color: rgb(255, 255, 255);
+				color: $glass-brightPink;
+				background-color: #ffffff;
 			}
 		}
 	}
@@ -166,6 +167,7 @@
 	}
 	.buttons {
 		a {
+			padding: 10px 0 !important;
 			font-size: $cardButton-small-screen !important;
 		}
 	}

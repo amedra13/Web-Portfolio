@@ -53,7 +53,7 @@ const Contact = () => {
 						other request or question, don’t hesitate to use the form.
 					</p>
 					{err && (
-						<p style={{ color: 'red' }}>
+						<p style={{ color: 'rgb(255, 77, 77)' }}>
 							- Empty Field. Please fill out form completely -
 						</p>
 					)}

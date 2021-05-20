@@ -46,6 +46,7 @@
 				border-radius: $border-radius;
 				padding-left: 15px;
 				font-family: $main-font;
+				font-weight: 600;
 				font-size: $formBody-medium-screen;
 			}
 			input:focus,
@@ -62,18 +63,19 @@
 				grid-column: 1/3;
 			}
 			button {
-				border: 2px solid rgba(0, 238, 255, 0.432);
+				border: 2px solid $glass-brightPink;
+				background-color: $glass-brightPink;
 				border-radius: 10px;
 				font-size: $formBody-medium-screen;
 				font-family: $main-font;
-				background-color: rgba(0, 238, 255, 0.432);
+				font-weight: 600;
 				color: white;
 				box-shadow: 0 4px 16px 0 rgba(0, 0, 7, 0.493);
 				transition: all 200ms;
 			}
 			button:hover {
-				background-color: white;
-				color: rgba(0, 238, 255, 0.432);
+				background-color: #ffffff;
+				color: $glass-brightPink;
 			}
 		}
 	}
