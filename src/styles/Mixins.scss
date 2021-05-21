@@ -1,6 +1,6 @@
 @mixin right-side-style {
 	background: rgba(62, 39, 71, 0.315);
-	color: white;
+	color: #ffffff;
 	font-family: $main-font;
 }
 @mixin glass-styling {
@@ -16,9 +16,9 @@
 		margin: 0;
 		font-size: $h1-large-screen;
 		font-weight: 7000;
-		color: rgb(199, 209, 255);
+		color: #c7d1ff;
 	}
-	border-bottom: 2px solid rgb(199, 209, 255);
+	border-bottom: 2px solid #c7d1ff;
 }
 @mixin right-side-structure {
 	height: 100%;

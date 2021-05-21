@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from '../images/personIcon.jpg';
+import ProfilePhoto from '../images/profilePhoto.jpg';
 import Basketball from '../images/basketball.png';
 import SportsCards from '../images/cards.png';
 import Videogames from '../images/controller.png';
@@ -36,7 +36,11 @@ const About = () => {
 				</Grid>
 				<Grid item xs={12} md={6} className="about__item">
 					<div className="item__container about__me">
-						<img src={ProfilePhoto} alt="andres medrano" />
+						<img
+							className="about__profilePic"
+							src={ProfilePhoto}
+							alt="andres medrano"
+						/>
 						<p>Redwood City, CA</p>
 						<div className="about__interests">
 							<p>
